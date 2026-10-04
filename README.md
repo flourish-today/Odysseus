@@ -45,7 +45,7 @@ Odysseus helps you restrict your GrapheneOS phone. It lets you turn your Graphen
 3.  Turn on USB debugging in Developer options, connect the phone to your computer, and run the command Odysseus shows on its screen: `adb shell dpm set-device-owner org.getflourish.odysseus/.Receiver` 
 4.  Turn off Developer options in settings.
 5.  Open Odysseus. Under Create user, type a name like "user" and tap Create.
-6.  In Owner, go to Settings → System → Users → (the daily user) → Install available apps, and choose the apps you want for the daily user. App installs stay enabled for a new user until step 8, so you don't need to enable them here. You can always add more later (see Adding apps). It's recommended to install all GrapheneOS default apps besides Vanadium to avoid breakage. Without camera, for example, 
+6.  In Owner, go to Settings → System → Users → (the daily user) → Install available apps, and choose the apps you want for the daily user. App installs stay enabled for a new user until step 8, so you don't need to enable them here. You can always add more later (see Adding apps). It's recommended to install all GrapheneOS default apps besides Vanadium to avoid breakage. Without camera, for example, you can't take photos in Signal.
 7.  Switch to the daily user and finish its setup. To avoid breaking apps that use WebView, go to the App Store and install Vanadium Config and Vanadium System WebView (see Usability limitations). They may already be installed.
 8.  Go back to the Owner profile, open Settings → System → Users → (the daily user), and set App installs and updates to Disabled.
 
