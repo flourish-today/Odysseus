@@ -1,7 +1,11 @@
 
 # Odysseus
 
-[![Get it on Obtainium](https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png)](http://apps.obtainium.imranr.dev/redirect.html?r=obtainium://add/https://github.com/flourish-today/Odysseus/releases)
+## Download
+
+[<img src="/images/badge_github.png" alt="Get it on GitHub" height="80">](https://github.com/flourish-today/Odysseus/releases)
+[<img src="/images/badge_obtainium.png" alt="Get it on Obtainium" height="80">](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/flourish-today/Odysseus/releases)
+
 ## What it does
 
 Odysseus helps you restrict your GrapheneOS phone. It lets you turn your GrapheneOS phone into a dumbphone, but with all the benefits of a powerful smartphone (maps, Signal, etc), and far fewer of the [drawbacks](https://xxcancel.com/GrapheneOS/search?f=tweets&q=dumb%20phone&since=&until=&min_faves=) of a dumbphone. It creates a separate daily user that has only the apps you choose. Once you finish setup and turn off app installs for it, there's no way to add more from inside it. The Owner profile remains unrestricted to manage the device.
