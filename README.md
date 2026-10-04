@@ -1,7 +1,7 @@
 
 # Odysseus
 
-Restrict a GrapheneOS phone to the apps you choose, with no way to change it from inside.
+A GrapheneOS daily user with no browser and no app installs, just the apps you choose.
 
 ## Download
 [<img src="/downloads-images/badge_obtainium.png" alt="Get it on Obtainium" height="80">](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/flourish-today/Odysseus/releases)
