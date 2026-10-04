@@ -1,5 +1,3 @@
-
-
 # Odysseus
 
 Make a GrapheneOS daily user with no browser and no app installs, just the apps you choose. Follow the [setup](https://github.com/flourish-today/Odysseus#setup) to use Odysseus.
@@ -121,18 +119,16 @@ git checkout v1.0
 gradle --no-daemon :app:assembleRelease -Pandroid.aapt2FromMavenOverride="$ANDROID_HOME/build-tools/37.0.0/aapt2"
 ```
 
-Your unsigned APK should have this SHA-256: `118eed5b94d7b4e9af2fafbf5ab9f7c9288deed45be2d00b2efd7b1227bfaec0`
-
 To check it against the signed release, compare their contents:
 
 ```
 mkdir rel mine
 unzip -q Odysseus-1.0.apk -d rel
 unzip -q app/build/outputs/apk/release/app-release-unsigned.apk -d mine
-diff -r rel mine && echo MATCH
+diff -rq -x MANIFEST.MF -x '*.SF' -x '*.RSA' -x version-control-info.textproto rel mine && echo MATCH
 ```
 
-If it prints `MATCH`, the release contains exactly what you built.
+If it prints `MATCH`, the release contains exactly what you built. The skipped files are the release's signature and a record of whether the build had git history, which differs between my build and a fresh clone.
 
 ## FAQ
 
