@@ -87,7 +87,7 @@ You need the Owner profile password or a factory reset to turn off Odysseus.
 
 ### What Odysseus does with its device-owner powers
 
-Android doesn't list device-owner powers as permissions, so here is every device-management action Odysseus takes. You can check each one in the source.
+Android doesn't list device-owner powers as permissions. These are every device-management action Odysseus takes.
 
 | What it does | Android API | When |
 |---|---|---|
