@@ -2,9 +2,8 @@
 # Odysseus
 
 ## Download
-
-[<img src="/downloads-images/badge_github.png" alt="Get it on GitHub" height="80">](https://github.com/flourish-today/Odysseus/releases)
 [<img src="/downloads-images/badge_obtainium.png" alt="Get it on Obtainium" height="80">](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/flourish-today/Odysseus/releases)
+[<img src="/downloads-images/badge_github.png" alt="Get it on GitHub" height="80">](https://github.com/flourish-today/Odysseus/releases)
 
 ## What it does
 
