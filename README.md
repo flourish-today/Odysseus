@@ -3,6 +3,14 @@
 
 Make a GrapheneOS daily user with no browser and no app installs, just the apps you choose.
 
+## Screenshots
+
+<div align="center">
+    <img src="downloads-images/Screenshot_20261004-174600.png" alt="" style="width: 300px" />
+    <img src="downloads-images/Screenshot_20261004-174606.png" alt="" style="width: 300px" />
+    <img src="downloads-images/Screenshot_20261004-174613.png" alt="" style="width: 300px" />
+</div>
+
 ## Download
 [<img src="/downloads-images/badge_obtainium.png" alt="Get it on Obtainium" height="80">](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/flourish-today/Odysseus/releases)
 [<img src="/downloads-images/badge_github.png" alt="Get it on GitHub" height="80">](https://github.com/flourish-today/Odysseus/releases)
