@@ -107,7 +107,7 @@ You need the Owner profile password or a factory reset to turn off Odysseus.
 
 Two clean builds of Odysseus 1.0 on my machine produced identical APKs, which is the basis for [reproducible](https://reproducible-builds.org/) builds. This will let you verify that the APK Odysseus distributes corresponds to its source code.
 
-**Check the signature.** The recommended way to verify Odysseus is to user verified-apps-android by Privacy Guides.
+**Check the signature.** The recommended way to verify Odysseus is to use verified-apps-android by Privacy Guides.
 
 **Build it yourself.** You need JDK 21, Gradle 9.5.1, and the Android SDK with platform 37 and build-tools 37.0.0, with `ANDROID_HOME` set.
 
