@@ -1,0 +1,15 @@
+<resources>
+    <string name="status_device_owner">Device owner: active</string>
+    <string name="status_not_device_owner">Not the device owner. To set up, run this from a computer with USB debugging on:</string>
+    <string name="create_user">Create user</string>
+    <string name="user_name">Name</string>
+    <string name="create">Create</string>
+    <string name="user_created">User created</string>
+    <string name="user_create_failed">Couldn\'t create user: %1$s</string>
+    <string name="backups_failed">Couldn\'t turn on system backups.</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="exit_path_note">To undo this setup: first delete the restricted user (Settings → System → Users), then tap Deactivate. Deactivate only affects this Owner profile. A user created here keeps its restrictions until it is deleted.</string>
+    <string name="deactivate_confirm_title">Deactivate?</string>
+    <string name="deactivate_failed">Couldn\'t deactivate: %1$s</string>
+    <string name="deactivate_confirm_message">This removes Odysseus as device owner. Setting it up again needs the ADB command, and works only when the phone has no other users or accounts.</string>
+</resources>
