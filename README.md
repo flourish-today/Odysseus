@@ -1,4 +1,5 @@
 
+
 # Odysseus
 
 Make a GrapheneOS daily user with no browser and no app installs, just the apps you choose. Follow the [setup](https://github.com/flourish-today/Odysseus#setup) to use Odysseus.
@@ -127,6 +128,35 @@ apksigcopier compare Odysseus-1.0.apk --unsigned app/build/outputs/apk/release/a
 If it prints nothing, they match.
 
 Release signing certificate SHA-256: `febb57701990d136896aede8da8b3f9d62c13f0d20d2ad3be777682ab39663b0`
+### Verifying a release
+
+Odysseus builds are reproducible: two clean builds of Odysseus 1.0 produced identical APKs. This lets you check that the APK on the Releases page was built from the published source code.
+
+**Check the signature.** The recommended way to verify Odysseus is to use [verified-apps-android](https://github.com/privacyguides/verified-apps-android) by Privacy Guides.
+
+Release signing certificate SHA-256: `febb57701990d136896aede8da8b3f9d62c13f0d20d2ad3be777682ab39663b0`
+
+**Build it yourself.** You need JDK 21, Gradle 9.5.1, and the Android SDK with platform 37 and build-tools 37.0.0, with `ANDROID_HOME` set.
+
+```
+git clone https://github.com/flourish-today/odysseus.git
+cd odysseus
+git checkout v1.0
+gradle --no-daemon :app:assembleRelease -Pandroid.aapt2FromMavenOverride="$ANDROID_HOME/build-tools/37.0.0/aapt2"
+```
+
+Your unsigned APK should have this SHA-256: `118eed5b94d7b4e9af2fafbf5ab9f7c9288deed45be2d00b2efd7b1227bfaec0`
+
+To check it against the signed release, compare their contents:
+
+```
+mkdir rel mine
+unzip -q Odysseus-1.0.apk -d rel
+unzip -q app/build/outputs/apk/release/app-release-unsigned.apk -d mine
+diff -r rel mine && echo MATCH
+```
+
+If it prints `MATCH`, the release contains exactly what you built.
 
 ## FAQ
 
