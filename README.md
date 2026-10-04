@@ -106,7 +106,7 @@ You need the Owner profile password or a factory reset to turn off Odysseus.
 
 Odysseus 1.0 can be checked against its source: a fresh build matches the release in every file except one build-info record, which the next version will remove.
 
-**Check the signature.** The recommended way to verify Odysseus is to use [verified-apps-android](https://github.com/privacyguides/verified-apps-android) by Privacy Guides (once its been added).
+**Check the signature.** The recommended way to verify Odysseus is to use [verified-apps-android](https://github.com/privacyguides/verified-apps-android) by Privacy Guides.
 
 Release signing certificate SHA-256: `febb57701990d136896aede8da8b3f9d62c13f0d20d2ad3be777682ab39663b0`
 
