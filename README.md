@@ -87,10 +87,20 @@ You need the Owner profile password or a factory reset to turn off Odysseus.
 
 ### What Odysseus does with its device-owner powers
 
--   Creates the daily user without the optional system apps, and becomes its profile owner.
--   When the daily user first starts: blocks Private Space and debugging features there, and hides its own icon.
--   Turns the backup service on by default in Owner and the daily user.
--   **Deactivate** removes Odysseus as device owner. There's no confirmation screen.
+Android doesn't list device-owner powers as permissions, so here is every device-management action Odysseus takes. You can check each one in the source.
+
+| What it does | Android API | When |
+|---|---|---|
+| Creates the daily user without the optional system apps, and becomes its profile owner | `DevicePolicyManager.createAndManageUser` | In Owner, when you tap Create |
+| Blocks Private Space | `addUserRestriction` with `DISALLOW_ADD_PRIVATE_PROFILE` | In the daily user, when it first starts |
+| Blocks debugging features | `addUserRestriction` with `DISALLOW_DEBUGGING_FEATURES` | In the daily user, when it first starts |
+| Turns the backup service on | `DevicePolicyManager.setBackupServiceEnabled` | In the daily user when it first starts, and in Owner whenever you open Odysseus |
+| Hides its own screen | `PackageManager.setComponentEnabledSetting` (its own screen only) | In the daily user, when it first starts |
+| Removes itself as device owner | `DevicePolicyManager.clearDeviceOwnerApp` | In Owner, when you tap Deactivate |
+
+That's all of it. Odysseus never lifts a restriction once it's set, and it declares no device-admin policies (`res/xml/device_admin.xml` is empty). Its other device-management calls only check whether it is the device owner or profile owner.
+
+Some effects come from Android itself, not from Odysseus: while a device owner exists, Private Space and work profiles are unavailable in Owner, and Odysseus can't be uninstalled from the daily user.
 
 ### Risks to using Odysseus
 
