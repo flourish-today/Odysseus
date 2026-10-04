@@ -20,7 +20,7 @@ SHA-256 checksums are also provided per file on the GitHub releases page.
 
 ## What it does
 
-Odysseus helps you restrict your GrapheneOS phone. It lets you turn your GrapheneOS phone into a dumbphone, but with all the benefits of a powerful smartphone (maps, Signal, etc), and far fewer of the [drawbacks](https://xxcancel.com/GrapheneOS/search?f=tweets&q=dumb%20phone&since=&until=&min_faves=) of a dumbphone. It creates a separate daily user that has only the apps you choose. Once you finish setup and turn off app installs for it, there's no way to add more from inside it. The Owner profile remains unrestricted to manage the device.
+Odysseus helps you restrict your GrapheneOS phone. It lets you turn your GrapheneOS phone into a dumbphone, but with all the benefits of a powerful smartphone (maps, Signal, etc), and far fewer of the [drawbacks](https://xxcancel.com/GrapheneOS/search?f=tweets&q=dumb%20phone&since=&until=&min_faves=) of a dumbphone. It creates a separate daily user that has only the apps you choose and no browser. Once you finish setup and turn off app installs for it, there's no way to add more from inside it. The Owner profile remains unrestricted to manage the device.
 
 ## How it works
 
