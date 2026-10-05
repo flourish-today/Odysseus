@@ -62,9 +62,9 @@ To update an app, simply update it in Owner. Both users share the same installed
 ## FAQ
 
 -   **Does Odysseus use AI?** Yes. This app was developed with Claude Opus 5.5. Its code was reviewed by GPT-6 Astra. AI security reviews of Odysseus found no way for other apps to use its device-owner powers and no network access. They found minor reliability issues, most of which have been fixed or found inconsequential. More reviews are welcome.
--   **Is Odysseus secure?** Odysseus uses the intended way to restrict devices on Android. It's tiny, requests no additional permissions, and only does what it says. See more info in [SECURITY.md](https://claude.ai/chat/SECURITY.md).
+-   **Is Odysseus secure?** Odysseus uses the intended way to restrict devices on Android. It's tiny, requests no additional permissions, and only does what it says. See more info in [SECURITY.md](SECURITY.md).
 -   **Is Odysseus privacy respecting?** Yes. There's no telemetry, no permissions, and no network access.
--   **What are the risks?** One risk with Odysseus, and device-owner apps in general, is the amount of trust you have to put in them. Device-owner apps are given a huge amount of permissions by Android. Odysseus uses only the few listed in [SECURITY.md](https://claude.ai/chat/SECURITY.md), and they can be undone.
+-   **What are the risks?** One risk with Odysseus, and device-owner apps in general, is the amount of trust you have to put in them. Device-owner apps are given a huge amount of permissions by Android. Odysseus uses only the few listed in [SECURITY.md](SECURITY.md), and they can be undone.
 -   **Will I always need ADB?** In the future, depending on GrapheneOS, Odysseus may be updated so you can install it and make it the device owner without ADB, through QR code provisioning during initial device setup ([issue](https://github.com/GrapheneOS/platform_packages_apps_SetupWizard2/issues/35) / [pull request](https://github.com/GrapheneOS/platform_packages_apps_SetupWizard2/pull/40)). You can add reactions to show support, but please only comment if you have something meaningful to add.
 -   **What if I have an iPhone or iPad that I want to achieve the same result on?** You should use Apple Configurator ([guide1](https://redlib.catsarch.com/r/nosurf/comments/1731ozp/how_to_turn_your_your_iphone_into_dumb_phone/) / [guide2](https://stopa.io/post/297)) to manage your devices, remove the browser and prevent new app installs. A macOS device and a factory reset of your iPhone/iPad are required for the initial setup.
 -   **There's been no activity recently, is it still safe?** This is a simple app which will not require many updates.
@@ -96,4 +96,4 @@ Odysseus assumes zero responsibility for any issues you run into while using it.
 
 ## Public domain
 
-Odysseus is dedicated to the public domain under CC0 1.0. See [LICENSE](https://claude.ai/chat/LICENSE).
+Odysseus is dedicated to the public domain under CC0 1.0. See [LICENSE](LICENSE).
