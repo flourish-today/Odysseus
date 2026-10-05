@@ -82,65 +82,6 @@ You need the Owner profile password or a factory reset to turn off Odysseus.
     - Odysseus has only been tested with Vanadium Config and System WebView installed. 
 -   The Private Space is unavailable in all profiles.
 -   The Owner password is the restriction enforcement. You can always factory reset the phone, which removes everything.
-
-## Security and trust
-
-### What Odysseus does with its device-owner powers
-
-Android doesn't list device-owner powers as permissions. These are every device-management action Odysseus takes.
-
-| What it does | Android API | When |
-|---|---|---|
-| Creates the daily user without the optional system apps, and becomes its profile owner | `DevicePolicyManager.createAndManageUser` | In Owner, when you tap Create |
-| Blocks Private Space | `addUserRestriction` with `DISALLOW_ADD_PRIVATE_PROFILE` | In the daily user, when it first starts |
-| Blocks debugging features | `addUserRestriction` with `DISALLOW_DEBUGGING_FEATURES` | In the daily user, when it first starts |
-| Turns the backup service on | `DevicePolicyManager.setBackupServiceEnabled` | In the daily user when it first starts, and in Owner whenever you open Odysseus |
-| Hides its own screen | `PackageManager.setComponentEnabledSetting` (its own screen only) | In the daily user, when it first starts |
-| Removes itself as device owner | `DevicePolicyManager.clearDeviceOwnerApp` | In Owner, when you tap Deactivate |
-
-Odysseus never lifts a restriction once it's set, and it declares no device-admin policies (`res/xml/device_admin.xml` is empty). Its other device-management calls only check whether it is the device owner or profile owner.
-
-Some effects come from Android itself, not from Odysseus: while a device owner exists, Private Space and work profiles are unavailable in Owner, and Odysseus can't be uninstalled from the daily user.
-
-### Risks to using Odysseus
-
--   Odysseus is a device-owner app, which gives it powers far beyond a normal app. Odysseus uses only a few of them, but a future update signed with the same key could, for example, wipe your device. Device owner isn't root: Android still limits what it can do ([source1](https://xxcancel.com/GrapheneOS/status/2023608038637146442#m), [2](https://xxcancel.com/GrapheneOS/status/1422158415728627715#m)).
--   By using Odysseus, you're using GrapheneOS in a non-standard way. GrapheneOS does not recommend changing the default installed apps, and Odysseus does not install Vanadium into the daily user. GrapheneOS does recognize device owners as the standard way to manage devices, and ADB is currently the only way to enable them.
-
-### Features
-
--   Odysseus has no network access and no permissions, and other apps can't use its powers.
--   Odysseus has a clean and straightforward design, there's only one page of the app.
--   Odysseus is very small. It will take up effectively zero space on your device.
-
-### Verifying a release
-
-Odysseus 1.0 can be checked against its source: a fresh build matches the release in every file except one build-info record, which the next version will remove.
-
-**Check the signature.** The recommended way to verify Odysseus is to use [verified-apps-android](https://github.com/privacyguides/verified-apps-android) by Privacy Guides.
-
-Release signing certificate SHA-256: `febb57701990d136896aede8da8b3f9d62c13f0d20d2ad3be777682ab39663b0`
-
-**Build it yourself.** You need JDK 21, Gradle 9.5.1, and the Android SDK with platform 37 and build-tools 37.0.0, with `ANDROID_HOME` set.
-
-```
-git clone https://github.com/flourish-today/odysseus.git
-cd odysseus
-git checkout v1.0
-gradle --no-daemon :app:assembleRelease -Pandroid.aapt2FromMavenOverride="$ANDROID_HOME/build-tools/37.0.0/aapt2"
-```
-
-To check it against the signed release, compare their contents:
-
-```
-mkdir rel mine
-unzip -q Odysseus-1.0.apk -d rel
-unzip -q app/build/outputs/apk/release/app-release-unsigned.apk -d mine
-diff -rq -x MANIFEST.MF -x '*.SF' -x '*.RSA' -x version-control-info.textproto rel mine && echo MATCH
-```
-
-If it prints `MATCH`, the release contains exactly what you built. The skipped files are the release's signature and a record of whether the build had git history, which differs between my build and a fresh clone.
-
 ## FAQ
 
 -   **Does Odysseus use AI?** Yes. This app was developed with Claude Opus 5.5. Its code was reviewed by GPT-6 Astra. AI security reviews of Odysseus found no way for other apps to use its device-owner powers and no network access. They found minor reliability issues which have been fixed. More reviews are welcome. 
@@ -156,15 +97,10 @@ If it prints `MATCH`, the release contains exactly what you built. The skipped f
 
 Odysseus assumes zero responsibility for any issues you run into while using it. Support will be provided on a best-effort basis.
 
-## Donate
-Consider a donation as a token of appreciation if this app helps you. Kind emails are also accepted.
-
+## Support
 **Monero**
 
     82omZG3aUU7gqJhR6dZGSReYvKD7kHFuxj5MGKMAGiJdcSYLnMb9Nky9UBxeuadSSzCNYpwfUueQBdQPEaTXmLH4Tkmbv39
-
-Donate with altcoins: https://trocador.app
-
 ## Public domain
 
 Odysseus is dedicated to the public domain under CC0 1.0. See [LICENSE](LICENSE).
