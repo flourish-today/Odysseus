@@ -17,18 +17,18 @@ Make a GrapheneOS daily user with no browser and no app installs, just the apps 
 ### Owner profile
 <div align="center">
     <img src="downloads-images/Screenshot_20261004-174600.png" alt="" style="width: 250px" />
-    <img src="downloads-images/Screenshot_20261004-174606.png" alt="" style="width: 300px" />
-    <img src="downloads-images/Screenshot_20261004-175932.png" alt="" style="width: 300px" />
-    <img src="downloads-images/Screenshot_20261004-175938.png" alt="" style="width: 300px" />
+    <img src="downloads-images/Screenshot_20261004-174606.png" alt="" style="width: 250px" />
+    <img src="downloads-images/Screenshot_20261004-175932.png" alt="" style="width: 250px" />
+    <img src="downloads-images/Screenshot_20261004-175938.png" alt="" style="width: 250px" />
 </div>
 
 ### User profile
 
 <div align="center">
-    <img src="downloads-images/user1.png" alt="" style="width: 300px" />
-    <img src="downloads-images/user2.png" alt="" style="width: 300px" />
-    <img src="downloads-images/user3.png" alt="" style="width: 300px" />
-    <img src="downloads-images/user4.png" alt="" style="width: 300px" />
+    <img src="downloads-images/user1.png" alt="" style="width: 250px" />
+    <img src="downloads-images/user2.png" alt="" style="width: 250px" />
+    <img src="downloads-images/user3.png" alt="" style="width: 250px" />
+    <img src="downloads-images/user4.png" alt="" style="width: 250px" />
 </div>
 </details>
 
