@@ -16,7 +16,7 @@ These are the device-management APIs Odysseus uses.
 ### Risks to using Odysseus
 
 -   Odysseus is a device-owner app, which gives it powers far beyond a normal app. Odysseus uses only a few of them as listed above, but a future update signed with the same key could, for example, give Odysseus the ability to wipe your device.
--   By using Odysseus, you're using GrapheneOS in a non-standard way. GrapheneOS does not recommend changing the default installed apps, and Odysseus does not install Vanadium into the daily user. GrapheneOS recognizes device owners as the standard way to manage devices, and ADB is currently the only way to enable them. They do not recommend using to, "disallow a bunch of functionality". [1]
+-   By using Odysseus, you're using GrapheneOS in a non-standard way. GrapheneOS does not recommend changing the default installed apps, and Odysseus does not install Vanadium into the daily user. GrapheneOS recognizes device owners as the standard way to manage devices, and ADB is currently the only way to enable them. They do not recommend using them to, "disallow a bunch of functionality". [1]
 
 ### Features
 
