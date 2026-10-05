@@ -10,6 +10,9 @@ Make a GrapheneOS daily user with no browser and no app installs, just the apps 
     41:BA:C6:AE:69:4A:C5:EA:DB:C6:E1:7C:D9:7A:5D:2D:6C:D2:FB:95:DA:2D:21:A6:16:79:8B:94:E4:B5:A5:BA
 
 ## Screenshots
+<details>
+<summary><b>Click here to see screenshots</b></summary>
+<br>
 ### Owner profile
 <div align="center">
     <img src="downloads-images/Screenshot_20261004-174600.png" alt="" style="width: 300px" />
@@ -19,6 +22,15 @@ Make a GrapheneOS daily user with no browser and no app installs, just the apps 
 </div>
 
 ### User profile
+
+<div align="center">
+    <img src="downloads-images/user1.png" alt="" style="width: 300px" />
+    <img src="downloads-images/user2.png" alt="" style="width: 300px" />
+    <img src="downloads-images/user3.png" alt="" style="width: 300px" />
+    <img src="downloads-images/user4.png" alt="" style="width: 300px" />
+</div>
+</details>
+
 
 ## What it does
 
