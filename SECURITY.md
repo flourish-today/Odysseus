@@ -57,8 +57,7 @@ git checkout v1.01
 gradle --no-daemon :app:assembleRelease -Pandroid.aapt2FromMavenOverride="$ANDROID_HOME/build-tools/37.0.0/aapt2"
 
 ```
-
-To check it against the signed release, compare their contents:
+Download Odysseus-1.01.apk from the v1.01 GitHub release into the odysseus folder. To check it against the signed release, compare their contents:
 
 ```
 mkdir rel mine
