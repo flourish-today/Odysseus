@@ -1,4 +1,3 @@
-
 # Security Policy
 
 ## Supported Versions
@@ -72,6 +71,7 @@ In Owner, when you tap Deactivate
 
 -   Odysseus has no network access and no permissions, and other apps can't use its powers.
 -   Odysseus has 1 exported component (its launcher screen), no permissions, the Kotlin standard library only, and under 200 lines of Kotlin. You can check the component and permissions in `app/src/main/AndroidManifest.xml`.
+- Odysseus has reproducible builds. See [Verifying a release](#verifying-a-release).
 -   Odysseus has a clean and straightforward design, there's only one page of the app.
 -   Odysseus is very small. It will take up effectively zero space on your device.
 
