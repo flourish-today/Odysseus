@@ -10,57 +10,14 @@ Email flourish.today@protonmail.com
 
 ## Security and trust
 
-### How it works
-
--   **Owner is the manager.** You use Owner to set up the daily user and to add or update its apps. Owner remains unrestricted to manage the device.
--   **The daily user is a restricted user for everyday use.** Odysseus creates it without the optional system apps, so on GrapheneOS it starts without the browser (Vanadium). It starts with a basic set: App Store, Contacts, Files, Settings, and Phone. You add the apps you want from Owner, then turn off app installs for the daily user. Once app installs are off, there's no way to add more from inside it.
--   **No off switch in the daily user.** When the daily user starts for the first time, Odysseus blocks Private Space and debugging features in it, and hides its own icon. There is no Odysseus screen in the daily user to turn the restrictions off.
-
-### What Odysseus does with its device-owner powers
-
-These are the device-management APIs Odysseus uses.
-
-What it does
-
-Android API
-
-When
-
-Creates the daily user without the optional system apps, and becomes its profile owner
-
-`DevicePolicyManager.createAndManageUser`
-
-In Owner, when you tap Create
-
-Blocks Private Space
-
-`addUserRestriction` with `DISALLOW_ADD_PRIVATE_PROFILE`
-
-In the daily user, when it first starts
-
-Blocks debugging features
-
-`addUserRestriction` with `DISALLOW_DEBUGGING_FEATURES`
-
-In the daily user, when it first starts
-
-Turns the backup service on
-
-`DevicePolicyManager.setBackupServiceEnabled`
-
-In the daily user when it first starts, and in Owner whenever you open Odysseus
-
-Hides its own screen
-
-`PackageManager.setComponentEnabledSetting` (its own screen only)
-
-In the daily user, when it first starts
-
-Removes itself as device owner
-
-`DevicePolicyManager.clearDeviceOwnerApp`
-
-In Owner, when you tap Deactivate
+| What it does | Android API | When |
+|---|---|---|
+| Creates the daily user without the optional system apps, and becomes its profile owner | `DevicePolicyManager.createAndManageUser` | In Owner, when you tap Create |
+| Blocks Private Space | `addUserRestriction` with `DISALLOW_ADD_PRIVATE_PROFILE` | In the daily user, when it first starts |
+| Blocks debugging features | `addUserRestriction` with `DISALLOW_DEBUGGING_FEATURES` | In the daily user, when it first starts |
+| Turns the backup service on | `DevicePolicyManager.setBackupServiceEnabled` | In the daily user when it first starts, and in Owner whenever you open Odysseus |
+| Hides its own screen | `PackageManager.setComponentEnabledSetting` (its own screen only) | In the daily user, when it first starts |
+| Removes itself as device owner | `DevicePolicyManager.clearDeviceOwnerApp` | In Owner, when you tap Deactivate |
 
 ### Risks to using Odysseus
 
