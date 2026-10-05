@@ -89,7 +89,7 @@ To update an app, simply update it in Owner. Both users share the same installed
 
 <div align="center"> <img src="downloads-images/Screenshot_20261004-174600.png" alt="" style="width: 250px" /> <img src="downloads-images/Screenshot_20261004-174606.png" alt="" style="width: 250px" /> <img src="downloads-images/Screenshot_20261004-175932.png" alt="" style="width: 250px" /> <img src="downloads-images/Screenshot_20261004-175938.png" alt="" style="width: 250px" /> </div>
 
-### Daily user
+### User
 
 <div align="center"> <img src="downloads-images/user1.png" alt="" style="width: 250px" /> <img src="downloads-images/user2.png" alt="" style="width: 250px" /> <img src="downloads-images/user3.png" alt="" style="width: 250px" /> <img src="downloads-images/user4.png" alt="" style="width: 250px" /> </div> </details>
 
