@@ -1,11 +1,29 @@
+<div align="center"><img src="downloads-images/icon.svg" alt="Odysseus icon" width="128" /></div>
 
-# Odysseus
+<h1 align="center">Odysseus</h1>
 
-Make a GrapheneOS daily user with no browser and no app installs, just the apps you choose. Odysseus lets you turn your GrapheneOS phone into a dumbphone, but with all the benefits of a powerful smartphone (maps, messaging, password manager, etc), and none of the [drawbacks](https://xxcancel.com/GrapheneOS/search?f=tweets&q=dumb%20phone&since=&until=&min_faves=) of a dumbphone. 
+<div align="center">
+  <a href="app/build.gradle.kts"><img alt="API 35+" src="https://img.shields.io/badge/API_35%2B-3DDC84?style=for-the-badge&logo=android&logoColor=black" /></a>
+  <a href="app/src/main/java/org/getflourish/odysseus"><img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" /></a>
+  <img alt="For GrapheneOS" src="https://img.shields.io/badge/For_GrapheneOS-1E88E5?style=for-the-badge" />
+  <br />
+  <a href="SECURITY.md#security-and-trust"><img alt="No network access" src="https://img.shields.io/badge/network-none-00A86B?style=for-the-badge" /></a>
+  <a href="app/src/main/AndroidManifest.xml"><img alt="0 permissions" src="https://img.shields.io/badge/permissions-0-00A86B?style=for-the-badge" /></a>
+  <a href="SECURITY.md#verifying-a-release"><img alt="Reproducible builds" src="https://img.shields.io/badge/builds-reproducible-00A86B?style=for-the-badge" /></a>
+  <br />
+  <a href="LICENSE"><img alt="License: CC0 1.0" src="https://img.shields.io/badge/license-CC0_1.0-EF6C00?style=for-the-badge" /></a>
+  <img alt="Code size" src="https://img.shields.io/github/languages/code-size/flourish-today/odysseus?style=for-the-badge&color=1E88E5" />
+  <a href="https://github.com/flourish-today/odysseus/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/flourish-today/odysseus?style=for-the-badge&color=E53935&logo=github" /></a>
+</div>
 
-## Download
+<p align="center"><b>Make a GrapheneOS daily user with no browser and no app installs, just the apps you choose. Odysseus lets you turn your GrapheneOS phone into a dumbphone, but with all the benefits of a powerful smartphone (maps, messaging, password manager, etc), and none of the <a href="https://xxcancel.com/GrapheneOS/search?f=tweets&q=dumb%20phone&since=&until=&min_faves=">drawbacks</a> of a dumbphone.</b></p>
 
-[<img src="/downloads-images/badge_obtainium.png" alt="Get it on Obtainium" height="80">](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/flourish-today/Odysseus/releases) [<img src="/downloads-images/badge_github.png" alt="Get it on GitHub" height="80">](https://github.com/flourish-today/Odysseus/releases)
+<h2 align="center">Download</h2>
+
+<div align="center">
+  <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/flourish-today/Odysseus/releases"><img src="/downloads-images/badge_obtainium.png" alt="Get it on Obtainium" height="80" /></a>
+  <a href="https://github.com/flourish-today/Odysseus/releases"><img src="/downloads-images/badge_github.png" alt="Get it on GitHub" height="80" /></a>
+</div>
 
 ## How it works
 
