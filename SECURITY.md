@@ -77,7 +77,7 @@ In Owner, when you tap Deactivate
 
 ### Verifying a release
 
-Odysseus 1.0 can be checked against its source: a fresh build matches the release in every file except one build-info record, which the next version will remove.
+Odysseus 1.01 can be checked against its source: a fresh build matches the release in every file except its signature.
 
 **Check the signature.** The recommended way to verify Odysseus is to use [verified-apps-android](https://github.com/privacyguides/verified-apps-android) by Privacy Guides. Odysseus has been [domain verified](https://github.com/privacyguides/verified-apps/issues/6777) and [submitted](https://github.com/privacyguides/verified-apps/issues/6778) to be added to the database.
 
@@ -96,7 +96,7 @@ FE:BB:57:70:19:90:D1:36:89:6A:ED:E8:DA:8B:3F:9D:62:C1:3F:0D:20:D2:AD:3B:E7:77:68
 ```
 git clone https://github.com/flourish-today/odysseus.git
 cd odysseus
-git checkout v1.0
+git checkout v1.01
 gradle --no-daemon :app:assembleRelease -Pandroid.aapt2FromMavenOverride="$ANDROID_HOME/build-tools/37.0.0/aapt2"
 
 ```
@@ -105,13 +105,13 @@ To check it against the signed release, compare their contents:
 
 ```
 mkdir rel mine
-unzip -q Odysseus-1.0.apk -d rel
+unzip -q Odysseus-1.01.apk -d rel
 unzip -q app/build/outputs/apk/release/app-release-unsigned.apk -d mine
-diff -rq -x MANIFEST.MF -x '*.SF' -x '*.RSA' -x version-control-info.textproto rel mine && echo MATCH
+diff -rq -x MANIFEST.MF -x '*.SF' -x '*.RSA' rel mine && echo MATCH
 
 ```
 
-If it prints `MATCH`, the release contains exactly what you built. The skipped files are the release's signature and a record of whether the build had git history, which differs between my build and a fresh clone.
+If it prints `MATCH`, the release contains exactly what you built. The skipped files are the release's signature.
 
 [1] GrapheneOS relevant tweets on apps like Odysseus
 

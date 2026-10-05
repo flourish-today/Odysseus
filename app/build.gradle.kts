@@ -16,8 +16,8 @@ android {
         applicationId = "org.getflourish.odysseus"
         minSdk = 35
         targetSdk = 37
-        versionCode = 9
-        versionName = "1.0"
+        versionCode = 10
+        versionName = "1.01"
         manifestPlaceholders["appName"] = if (testBuild) "Odysseus Test" else "Odysseus"
     }
 
@@ -27,6 +27,9 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"))
+            vcsInfo {
+                include = false
+            }
         }
     }
 
