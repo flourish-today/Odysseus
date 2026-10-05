@@ -77,7 +77,7 @@ You need the Owner profile password or a factory reset to turn off Odysseus.
 
 -   Leaving system apps out of the daily user can break apps. Links that would normally open in a browser won't open, because there is none.
 -   WebView:
-    -   **With Vanadium Config and Vanadium System WebView installed** (setup step 7), apps that need WebView work, but any app with a built-in browser may still let you browse the web. Choose the daily user's apps with that in mind. If an app lets you browse sites beyond the ones it needs, consider asking its developer to follow [Android security best practices](https://developer.android.com/privacy-and-security/security-best-practices#webview) and restrict it.
+    -   **With Vanadium Config and Vanadium System WebView installed** (setup step 7), apps that need WebView work, but any app with a built-in browser may still let you browse the web. Choose the daily user's apps with that in mind. If an app lets you browse sites beyond the ones it needs, consider asking its developer to follow [Android security best practices](https://developer.android.com/privacy-and-security/security-best-practices#webview).
     -   **Without them**, built-in browsers can't load pages, but apps that need WebView break.
     -   Either way, don't install Vanadium itself. 
     - Odysseus has only been tested with Vanadium Config and System WebView installed. 
