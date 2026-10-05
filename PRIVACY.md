@@ -52,7 +52,7 @@ diff -rq -x MANIFEST.MF -x '*.SF' -x '*.RSA' -x version-control-info.textproto r
 
 If it prints `MATCH`, the release contains exactly what you built. The skipped files are the release's signature and a record of whether the build had git history, which differs between my build and a fresh clone.
 
-[1] GrapheneOS relevant tweets
+[1] GrapheneOS relevant tweets on apps like Odysseus
 
 [Tweet 1](https://xxcancel.com/GrapheneOS/status/1422158415728627715)
 > Device management APIs do work well already. You just need to grant those privileges to a device management app. It's possible Play supports it. We have no setup wizard integrating for setting a device policy manager as a device owner but that isn't an issue for work profiles.
