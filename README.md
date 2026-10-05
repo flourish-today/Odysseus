@@ -7,7 +7,7 @@ Make a GrapheneOS daily user with no browser and no app installs, just the apps 
 [<img src="/downloads-images/badge_github.png" alt="Get it on GitHub" height="80">](https://github.com/flourish-today/Odysseus/releases)
 
 SHA-256 hash of the signing certificate: febb57701990d136896aede8da8b3f9d62c13f0d20d2ad3be777682ab39663b0
-SHA-256 checksums are also provided per file on the GitHub releases page.
+
 ## Screenshots
 
 <div align="center">
