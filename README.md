@@ -6,7 +6,8 @@ Make a GrapheneOS daily user with no browser and no app installs, just the apps 
 [<img src="/downloads-images/badge_obtainium.png" alt="Get it on Obtainium" height="80">](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/flourish-today/Odysseus/releases)
 [<img src="/downloads-images/badge_github.png" alt="Get it on GitHub" height="80">](https://github.com/flourish-today/Odysseus/releases)
 
-SHA-256 hash of the signing certificate: febb57701990d136896aede8da8b3f9d62c13f0d20d2ad3be777682ab39663b0
+org.getflourish.test
+41:BA:C6:AE:69:4A:C5:EA:DB:C6:E1:7C:D9:7A:5D:2D:6C:D2:FB:95:DA:2D:21:A6:16:79:8B:94:E4:B5:A5:BA
 
 ## Screenshots
 
