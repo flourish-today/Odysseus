@@ -1,7 +1,7 @@
 
 # Odysseus
 
-Make a GrapheneOS daily user with no browser and no app installs, just the apps you choose. Odysseus lets you turn your GrapheneOS phone into a dumbphone, but with all the benefits of a powerful smartphone (maps, messaging, password manager, etc), and none of the [drawbacks](https://xxcancel.com/GrapheneOS/search?f=tweets&q=dumb%20phone&since=&until=&min_faves=) of a dumbphone. Follow the [setup](https://github.com/flourish-today/Odysseus#setup) to use Odysseus.
+Make a GrapheneOS daily user with no browser and no app installs, just the apps you choose. Odysseus lets you turn your GrapheneOS phone into a dumbphone, but with all the benefits of a powerful smartphone (maps, messaging, password manager, etc), and none of the [drawbacks](https://xxcancel.com/GrapheneOS/search?f=tweets&q=dumb%20phone&since=&until=&min_faves=) of a dumbphone. 
 
 ## Download
 
