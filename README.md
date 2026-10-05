@@ -92,7 +92,7 @@ You need the Owner profile password or a factory reset to turn off Odysseus.
 -   **Do I need ADB?** Yes, to set up Odysseus you need to temporarily enable Developer options, ADB, connect your computer, and run one command. You should then disable developer options.
 -   **Will I always need ADB?** In the future, depending on GrapheneOS, Odysseus may be updated so you can install it and make it the device owner without ADB, through QR code provisioning during initial device setup ([issue](https://github.com/GrapheneOS/platform_packages_apps_SetupWizard2/issues/35) / [pull request](https://github.com/GrapheneOS/platform_packages_apps_SetupWizard2/pull/40)). You can add reactions to show support, but please only comment if you have something meaningful to add.
 -   **What if I have an iPhone or iPad that I want to achieve the same result on?** You should use Apple Configurator ([guide1](https://redlib.catsarch.com/r/nosurf/comments/1731ozp/how_to_turn_your_your_iphone_into_dumb_phone/) / [guide2](https://stopa.io/post/297)) to manage your devices, remove the browser and prevent new app installs. A macOS device and a factory reset of your iPhone/iPad are required for the initial setup.
--   **There's been no activity recently, is it still safe?** This is a very simple app which will not require many updates. 
+-   **There's been no activity recently, is it still safe?** This is a simple app which will not require many updates. 
 
 ## Disclaimer
 
