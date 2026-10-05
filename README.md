@@ -13,6 +13,7 @@ Make a GrapheneOS daily user with no browser and no app installs, just the apps 
 <details>
 <summary><b>Click here to see screenshots</b></summary>
 <br>
+    
 ### Owner profile
 <div align="center">
     <img src="downloads-images/Screenshot_20261004-174600.png" alt="" style="width: 300px" />
