@@ -8,7 +8,7 @@ Only the latest version is supported with security updates.
 
 Email flourish.today@protonmail.com
 
-## Security and trust
+# Security and trust
 
 | What it does | Android API | When |
 |---|---|---|
@@ -63,11 +63,11 @@ Download Odysseus-1.01.apk from the v1.01 GitHub release into the odysseus folde
 mkdir rel mine
 unzip -q Odysseus-1.01.apk -d rel
 unzip -q app/build/outputs/apk/release/app-release-unsigned.apk -d mine
-diff -rq -x MANIFEST.MF -x '*.SF' -x '*.RSA' rel mine && echo MATCH
+diff -rq rel mine && echo MATCH
 
 ```
 
-If it prints `MATCH`, the release contains exactly what you built. The skipped files are the release's signature.
+If it prints `MATCH`, the release contains exactly what you built.
 
 [1] GrapheneOS relevant tweets on apps like Odysseus
 
