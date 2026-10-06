@@ -33,7 +33,7 @@
 <summary><b>Click here to see how it works</b></summary>
 <br>
 
-- **Owner is the manager.** You use Owner to set up the daily user and to add or update its apps. Owner remains unrestricted to manage the device.
+- **Owner is the manager.** You use Owner to set up the daily user and to add or update its apps. Owner remains unrestricted to manage the device. Much of the setup Odysseus lets you create is based around GrapheneOS's [improved user profiles](https://grapheneos.org/features#improved-user-profiles).
 - **The daily user is a restricted user for everyday use.** Odysseus creates it without the optional system apps, so on GrapheneOS it starts without the browser (Vanadium). It starts with a basic set: App Store, Contacts, Files, Settings, and Phone. You add the apps you want from Owner, then turn off app installs for the daily user. Once app installs are off, there's no way to add more from inside it.
 - **No off switch in the daily user.** When the daily user starts for the first time, Odysseus blocks Private Space and debugging features in it, and hides its own icon. There is no Odysseus screen in the daily user to turn the restrictions off.
 
