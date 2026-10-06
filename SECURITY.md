@@ -10,6 +10,8 @@ Email flourish.today@protonmail.com
 
 # Security and trust
 
+### Device management APIs used
+
 | What it does | Android API | When |
 |---|---|---|
 | Creates the daily user without the optional system apps, and becomes its profile owner | `DevicePolicyManager.createAndManageUser` | In Owner, when you tap Create |
