@@ -49,7 +49,7 @@
 -   **Make sure to back up all important data off your device.** You should do this even if you weren't using Odysseus in case your phone gets lost or breaks.
 -   Owner's password is what keeps the daily user restricted. Pick one you can't easily get to yourself. For example, have someone you trust set it, or split it so you each know only half. You can also use a long password stored somewhere inconvenient or a long password you have memorized. Whatever method you pick, consider memorizing part of it and not sharing that part, so only you can get into the phone. 
 - If the password is lost, the only way back is a factory reset.
--   Consider setting the [reboot timer](https://grapheneos.org/features#auto-reboot) to a longer length than you normally don't use your phone for because otherwise you will have to frequently unlock the Owner when it restarts, before moving to the user.
+-   Consider setting the reboot timer longer than you usually go without using your phone. After each automatic restart, you have to unlock Owner before you can switch to the daily user.
 
 ### Instructions
 
@@ -61,6 +61,7 @@
 6.  In Owner, go to Settings → System → Users → (the daily user) → Install available apps, and choose the apps you want for the daily user. App installs stay enabled for a new user until step 8, so you don't need to enable them here. You can always add more later (see Adding apps). It's recommended to install all GrapheneOS default apps besides Vanadium to avoid breakage. Without Camera, for example, you can't take photos in Signal.
 7.  Switch to the daily user and finish its setup. To avoid breaking apps that use WebView, go to the App Store and install Vanadium Config and Vanadium System WebView (see Usability limitations). They may already be installed.
 8.  Go back to Owner, open Settings → System → Users → (the daily user), and set App installs and updates to Disabled.
+9.  Confirm in the daily user that the private space is blocked, Odysseus's icon is gone from the homescreen, and you can't uninstall it from settings.
 
 ### Troubleshooting
 
@@ -81,7 +82,9 @@ To update an app, simply update it in Owner. Both users share the same installed
 
 1.  In Owner, delete the daily user: Settings → System → Users → (the daily user) → Delete user.
 2.  Open Odysseus and tap Deactivate.
-3.  You can now uninstall Odysseus. If you don't delete the daily user, the restrictions on it seem to continue to work.
+3. You can now uninstall Odysseus.
+
+If you tap Deactivate without deleting the daily user, the daily user stays restricted: Odysseus remains its profile owner and can't be uninstalled there. Deleting the daily user is what removes its restrictions.
 
 ## Usability limitations
 
