@@ -1,5 +1,7 @@
 # Security Policy
 
+Odysseus aims to be a secure app that people can rely on to improve their well being, therefore security is taken seriously to protect the users and all issues will be addressed.
+
 ## Reporting a vulnerability
 
 GitHub Private Vulnerability Reporting: https://github.com/flourish-today/Odysseus/security/advisories/new
