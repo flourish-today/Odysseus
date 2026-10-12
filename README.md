@@ -118,7 +118,7 @@ If you tap Deactivate without deleting the daily user, the daily user stays rest
 
 ## Disclaimer
 
-Odysseus assumes zero responsibility for any issues you run into while using it. Support will be provided on a best-effort basis.
+Odysseus assumes zero responsibility for any issues you run into while using it. Support will be provided on a best-effort basis. Feel free to open an [issue](https://github.com/flourish-today/Odysseus/issues), discuss on the [GrapheneOS forum](https://discuss.grapheneos.org/d/42598-odysseus-make-your-grapheneos-a-dumbphone) thread, or [contact me](https://github.com/flourish-today/Odysseus/blob/main/SECURITY.md).
 
 ## Support
 
