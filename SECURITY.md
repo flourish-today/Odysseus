@@ -1,5 +1,9 @@
-Email: flourish.today@protonmail.com 
+# Security Policy
 
-or open a private security advisory on GitHub 
+## Reporting a vulnerability
 
-or SimpleX: https://smp17.simplex.im/a#OYNzLgLMY-vsrI69LroxLrhc4xkyLGpT2Q5ygNvoaAc
+GitHub Private Vulnerability Reporting: https://github.com/flourish-today/Odysseus/security/advisories/new
+
+Email: flourish.today@protonmail.com
+
+SimpleX: https://smp17.simplex.im/a#OYNzLgLMY-vsrI69LroxLrhc4xkyLGpT2Q5ygNvoaAc
