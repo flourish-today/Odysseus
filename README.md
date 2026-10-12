@@ -9,9 +9,9 @@
   <a href="app/src/main/java/org/getflourish/odysseus"><img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" /></a>
   <img alt="Built For GrapheneOS" src="https://img.shields.io/badge/Built_For_GrapheneOS-1E88E5?style=for-the-badge" />
   <br />
-  <a href="SECURITY.md#features"><img alt="No network access" src="https://img.shields.io/badge/network-none-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
+  <a href="PRIVACY.md#features"><img alt="No network access" src="https://img.shields.io/badge/network-none-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
   <a href="app/src/main/AndroidManifest.xml"><img alt="0 permissions" src="https://img.shields.io/badge/permissions-0-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
-  <a href="SECURITY.md#verifying-a-release"><img alt="Reproducible builds" src="https://img.shields.io/badge/builds-reproducible-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
+  <a href="PRIVACY.md#verifying-a-release"><img alt="Reproducible builds" src="https://img.shields.io/badge/builds-reproducible-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
   <br />
   <a href="LICENSE"><img alt="License: CC0 1.0" src="https://img.shields.io/badge/license-CC0_1.0-FF9100?style=for-the-badge&labelColor=BF360C" /></a>
   <img alt="Code size" src="https://img.shields.io/github/languages/code-size/flourish-today/odysseus?style=for-the-badge&color=40C4FF&labelColor=0D47A1" />
@@ -97,9 +97,9 @@ If you tap Deactivate without deleting the daily user, the daily user stays rest
 ## FAQ
 
 -   **Does Odysseus use AI?** Yes. This app was developed with Claude Opus 5.5. Its code was reviewed by GPT-6 Astra. AI security reviews of Odysseus found no way for other apps to use its device-owner powers and no network access. They found minor reliability issues, most of which have been fixed or found inconsequential. More reviews are welcome.
--   **Is Odysseus secure?** Odysseus uses the intended way to restrict devices on Android. It's tiny, requests no additional permissions, and only does what it says. See more info in [SECURITY.md](SECURITY.md).
+-   **Is Odysseus secure?** Odysseus uses the intended way to restrict devices on Android. It's tiny, requests no additional permissions, and only does what it says. See more info in [PRIVACY.md](PRIVACY.md).
 -   **Is Odysseus privacy respecting?** Yes. There's no telemetry, no permissions, and no network access.
--   **What are the risks?** One risk with Odysseus, and device-owner apps in general, is the amount of trust you have to put in them. Device-owner apps are given a huge amount of permissions by Android. Odysseus uses only the few listed in [SECURITY.md](SECURITY.md), and they can be undone.
+-   **What are the risks?** One risk with Odysseus, and device-owner apps in general, is the amount of trust you have to put in them. Device-owner apps are given a huge amount of permissions by Android. Odysseus uses only the few listed in [PRIVACY.md](PRIVACY.md), and they can be undone.
 -   **Will I always need ADB?** In the future, depending on GrapheneOS, Odysseus may be updated so you can install it and make it the device owner without ADB, through QR code provisioning during initial device setup ([issue](https://github.com/GrapheneOS/platform_packages_apps_SetupWizard2/issues/35) / [pull request](https://github.com/GrapheneOS/platform_packages_apps_SetupWizard2/pull/40)). You can add reactions to show support, but please only comment if you have something meaningful to add.
 -   **What if I have an iPhone or iPad that I want to achieve the same result on?** You should use Apple Configurator ([guide1](https://redlib.catsarch.com/r/nosurf/comments/1731ozp/how_to_turn_your_your_iphone_into_dumb_phone/) / [guide2](https://stopa.io/post/297)) to manage your devices, remove the browser and prevent new app installs. A macOS device and a factory reset of your iPhone/iPad are required for the initial setup.
 -   **There's been no activity recently, is it still safe?** This is a simple app which will not require many updates.
