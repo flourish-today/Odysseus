@@ -100,9 +100,10 @@ If you tap Deactivate without deleting the daily user, the daily user stays rest
 -   **Is Odysseus secure?** Odysseus uses the intended way to restrict devices on Android. It's tiny, requests no additional permissions, and only does what it says. See more info in [PRIVACY.md](PRIVACY.md). You can verify you got the real Odysseus APK using the [SHA256 Signing Certificate](https://github.com/flourish-today/Odysseus/blob/main/PRIVACY.md#verifying-a-release) and also verify Odysseus's source code corresponds to the released APK through its support of Reproducible Builds.  
 -   **Is Odysseus privacy respecting?** Yes. There's no telemetry, no permissions, and no network access.
 -   **What are the risks?** One risk with Odysseus, and device-owner apps in general, is the amount of trust you have to put in them. Device-owner apps are given a huge amount of permissions by Android. Odysseus uses only the few listed in [PRIVACY.md](PRIVACY.md), and they can be undone.
--   **Will I always need ADB?** In the future, depending on GrapheneOS, Odysseus may be updated so you can install it and make it the device owner without ADB, through QR code provisioning during initial device setup ([issue](https://github.com/GrapheneOS/platform_packages_apps_SetupWizard2/issues/35) / [pull request](https://github.com/GrapheneOS/platform_packages_apps_SetupWizard2/pull/40)). You can add reactions to show support, but please only comment if you have something meaningful to add.
+-   **Will I always need ADB?** In the future, depending on GrapheneOS, Odysseus may be updated so you can install it and make it the device owner without ADB, through QR code provisioning during initial device setup ([issue](https://github.com/GrapheneOS/platform_packages_apps_SetupWizard2/issues/35) / [earlier attempt, closed](https://github.com/GrapheneOS/platform_packages_apps_SetupWizard2/pull/40)). You can add reactions to the issue to show support, but please only comment if you have something meaningful to add.
 -   **What if I have an iPhone or iPad that I want to achieve the same result on?** You should use Apple Configurator ([guide1](https://redlib.catsarch.com/r/nosurf/comments/1731ozp/how_to_turn_your_your_iphone_into_dumb_phone/) / [guide2](https://stopa.io/post/297)) to manage your devices, remove the browser and prevent new app installs. A macOS device and a factory reset of your iPhone/iPad are required for the initial setup.
--   **There's been no activity recently, is it still safe?** This is a simple app which will not require many updates.
+-   **There's been no activity recently, is it still safe?** This is a simple app which will not require many updates. Odysseus works on Android 17-based GrapheneOS. If something breaks after an update, please open an [issue](https://github.com/flourish-today/Odysseus/issues).
+
 
 ## Screenshots
 
@@ -110,15 +111,15 @@ If you tap Deactivate without deleting the daily user, the daily user stays rest
 
 ### Owner
 
-<div align="center"> <img src="downloads-images/Screenshot_20261004-174600.png" alt="" style="width: 250px" /> <img src="downloads-images/Screenshot_20261004-174606.png" alt="" style="width: 250px" /> <img src="downloads-images/Screenshot_20261004-175932.png" alt="" style="width: 250px" /> <img src="downloads-images/Screenshot_20261004-175938.png" alt="" style="width: 250px" /> </div>
+<div align="center"> <img src="downloads-images/Screenshot_20261004-174600.png" alt="Owner's home screen with Odysseus installed alongside the default GrapheneOS apps" style="width: 250px" /> <img src="downloads-images/Screenshot_20261004-174606.png" alt="Odysseus before setup, showing the ADB command that makes it the device owner" style="width: 250px" /> <img src="downloads-images/Screenshot_20261004-175932.png" alt="Odysseus as device owner, with a user name typed under Create user" style="width: 250px" /> <img src="downloads-images/Screenshot_20261004-175938.png" alt="Odysseus after creating the daily user, showing a User created message" style="width: 250px" /> </div>
 
 ### User
 
-<div align="center"> <img src="downloads-images/user1.png" alt="" style="width: 250px" /> <img src="downloads-images/user2.png" alt="" style="width: 250px" /> <img src="downloads-images/user3.png" alt="" style="width: 250px" /> <img src="downloads-images/user4.png" alt="" style="width: 250px" /> </div> </details>
+<div align="center"> <img src="downloads-images/user1.png" alt="The daily user's App Store failing an install because the policy on this device prevents app installation" style="width: 250px" /> <img src="downloads-images/user2.png" alt="The daily user's app list: searching for Vanadium finds only Vanadium Config and Vanadium System WebView, no browser" style="width: 250px" /> <img src="downloads-images/user3.png" alt="The daily user's app list showing Odysseus" style="width: 250px" /> <img src="downloads-images/user4.png" alt="Odysseus's app info in the daily user: no permissions granted and no data used" style="width: 250px" /> </div> </details>
 
 ## Disclaimer
 
-Odysseus assumes zero responsibility for any issues you run into while using it. Support will be provided on a best-effort basis. Feel free to open an [issue](https://github.com/flourish-today/Odysseus/issues), discuss on the [GrapheneOS forum](https://discuss.grapheneos.org/d/42598-odysseus-make-your-grapheneos-a-dumbphone) thread, or [contact me](https://github.com/flourish-today/Odysseus/blob/main/SECURITY.md).
+The developer accepts no responsibility for any issues you run into while using it. Support will be provided on a best-effort basis. Feel free to open an [issue](https://github.com/flourish-today/Odysseus/issues), discuss on the [GrapheneOS forum](https://discuss.grapheneos.org/d/42598-odysseus-make-your-grapheneos-a-dumbphone) thread, or [contact me](https://github.com/flourish-today/Odysseus/blob/main/SECURITY.md).
 
 ## Support
 
@@ -126,7 +127,6 @@ Odysseus assumes zero responsibility for any issues you run into while using it.
 
 ```
 82omZG3aUU7gqJhR6dZGSReYvKD7kHFuxj5MGKMAGiJdcSYLnMb9Nky9UBxeuadSSzCNYpwfUueQBdQPEaTXmLH4Tkmbv39
-
 ```
 
 ## Public domain
