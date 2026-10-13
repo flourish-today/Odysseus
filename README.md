@@ -48,29 +48,32 @@ FE:BB:57:70:19:90:D1:36:89:6A:ED:E8:DA:8B:3F:9D:62:C1:3F:0D:20:D2:AD:3B:E7:77:68
 
 ### Before you start
 
--   You need a GrapheneOS phone.
--   Android only allows a device owner on a phone with no accounts, no other users, and no Private Space. You can either factory reset your phone, or back up your data and remove every account, every other user, and Owner's Private Space. If you only use Owner, removing all accounts in Settings and your Private Space is enough.
--   You need a USB-C cable and a computer with [ADB installed](https://developer.android.com/tools/adb).
--   **Make sure to back up all important data off your device.** You should do this even if you weren't using Odysseus in case your phone gets lost or breaks.
--   Owner's password is what keeps the daily user restricted. Pick one you can't easily get to yourself. For example, have someone you trust set it, or split it so you each know only half. You can also use a long password stored somewhere inconvenient or a long password you have memorized. Whatever method you pick, consider memorizing part of it and not sharing that part, so only you can get into the phone. 
-- If the password is lost, the only way back is a factory reset.
--   Consider setting the reboot timer longer than you usually go without using your phone. After each automatic restart, you have to unlock Owner before you can switch to the daily user.
+-   You need a GrapheneOS phone, a USB-C cable, and a computer with [ADB installed](https://developer.android.com/tools/adb).
+-   **Back up all important data off your device.** You should do this even if you weren't using Odysseus, in case your phone gets lost or breaks.
+-   Android only allows a device owner on a phone with no accounts, no other users, and no Private Space. The most reliable way is a factory reset. Otherwise, remove every account, every other user, and Owner's Private Space. If you only use Owner, removing all accounts in Settings and your Private Space is enough.
+-   Owner's password is what keeps the daily user restricted. Pick one you can't easily get to yourself. For example, have someone you trust set it, or split it so you each know only half. You can also use a long password stored somewhere inconvenient or a long password you have memorized. Whatever method you pick, consider memorizing part of it and not sharing that part, so only you can get into the phone. If the password is lost, the only way back is a factory reset.
+-   Consider setting the auto reboot timer longer than you usually go without using your phone. After each automatic restart, you have to unlock Owner before you can switch to the daily user.
 
 ### Instructions
 
 1.  Install Odysseus in Owner.
-2.  Enable Developer options. Open Settings → About phone, tap Build number seven times, and enter your password. Developer options is now in Settings → System → Developer options.
-3.  Turn on USB debugging in Developer options, connect the phone to your computer, and run the command Odysseus shows on its screen: `adb shell dpm set-device-owner org.getflourish.odysseus/.Receiver`
-4.  Turn off Developer options in Settings.
-5.  Open Odysseus. Under Create user, type a name like "user" and tap Create.
-6.  In Owner, go to Settings → System → Users → (the daily user) → Install available apps, and choose the apps you want for the daily user. App installs stay enabled for a new user until step 8, so you don't need to enable them here. You can always add more later (see Adding apps). It's recommended to install all GrapheneOS default apps besides Vanadium to avoid breakage. Without Camera, for example, you can't take photos in Signal.
-7.  Switch to the daily user and finish its setup. To avoid breaking apps that use WebView, go to the App Store and install Vanadium Config and Vanadium System WebView (see Usability limitations). They may already be installed.
-8.  Go back to Owner, open Settings → System → Users → (the daily user), and set App installs and updates to Disabled.
-9.  Confirm in the daily user that the private space is blocked, Odysseus's icon is gone from the homescreen, and you can't uninstall it from settings.
+2.  Enable Developer options: open Settings → About phone, tap Build number seven times, and enter your PIN or password.
+3.  In Settings → System → Developer options, turn on USB debugging.
+4.  Connect the phone to your computer. When the phone asks whether to allow USB debugging, tap Allow.
+5.  On your computer, open a terminal (Command Prompt on Windows) and run the command Odysseus shows on its screen:
+    `adb shell dpm set-device-owner org.getflourish.odysseus/.Receiver`
+    Odysseus should now say "Device owner: active."
+6.  Turn off Developer options in Settings → System → Developer options (this will also turn off USB debugging.
+7.  In Odysseus, under Create user, type a name like "user" and tap Create.
+8.  In Owner, go to Settings → System → Users → (the daily user) → Install available apps, and choose the apps you want. It's recommended to install all GrapheneOS default apps besides Vanadium to avoid breakage. Without Camera, for example, you can't take photos in Signal. App installs are already enabled for a new user, so you don't need to turn them on here. You can add more apps later (see [Adding apps](#adding-apps)).
+9.  Switch to the daily user (swipe down twice from the top of the screen and tap the user icon) and finish its setup. In its App Store, check that Vanadium Config and Vanadium System WebView are installed, and install them if not. Apps that use WebView need them (see [Usability limitations](#usability-limitations)).
+10. Go back to Owner, open Settings → System → Users → (the daily user), and set App installs and updates to Disabled.
+11. In the daily user, check that Odysseus's icon is gone from the home screen, that Odysseus can't be uninstalled in Settings → Apps, and that Private Space can't be set up.
 
 ### Troubleshooting
 
 -   **The `set-device-owner` command fails with an error about accounts or users.** An account, another user, or Private Space still exists. Remove it and run the command again. A reliable way to set up Odysseus is after a factory reset.
+-   **ADB says no devices were found, or that the device is unauthorized.** Check that the cable is connected and USB debugging is on, then unplug and reconnect the phone and tap Allow when it asks.
 
 ## Adding apps
 
