@@ -11,7 +11,7 @@
   <br />
   <a href="PRIVACY.md#features"><img alt="No network access" src="https://img.shields.io/badge/network-none-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
   <a href="app/src/main/AndroidManifest.xml"><img alt="0 permissions" src="https://img.shields.io/badge/permissions-0-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
-  <a href="PRIVACY.md#verifying-a-release"><img alt="Reproducible builds" src="https://img.shields.io/badge/builds-reproducible-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
+  <a href="PRIVACY.md#reproducible-builds"><img alt="Reproducible builds" src="https://img.shields.io/badge/builds-reproducible-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
   <br />
   <a href="LICENSE"><img alt="License: CC0 1.0" src="https://img.shields.io/badge/license-CC0_1.0-FF9100?style=for-the-badge&labelColor=BF360C" /></a>
   <img alt="Code size" src="https://img.shields.io/github/languages/code-size/flourish-today/odysseus?style=for-the-badge&color=40C4FF&labelColor=0D47A1" />
@@ -97,7 +97,7 @@ If you tap Deactivate without deleting the daily user, the daily user stays rest
 ## FAQ
 
 -   **Does Odysseus use AI?** Yes. This app was developed with Claude Opus 5.5. Its code was reviewed by GPT-6 Astra. AI security reviews of Odysseus found no way for other apps to use its device-owner powers and no network access. They found minor reliability issues, most of which have been fixed or found inconsequential. More reviews are welcome.
--   **Is Odysseus secure?** Odysseus uses the intended way to restrict devices on Android. It's tiny, requests no additional permissions, and only does what it says. See more info in [PRIVACY.md](PRIVACY.md). You can verify you got the real Odysseus APK using the [SHA256 Signing Certificate](https://github.com/flourish-today/Odysseus/blob/main/PRIVACY.md#verifying-a-release) and also verify Odysseus's source code corresponds to the released APK through its support of Reproducible Builds.  
+-   **Is Odysseus secure?** Odysseus uses the intended way to restrict devices on Android. It's tiny, requests no permissions, and only does what it says. See more info in [PRIVACY.md](PRIVACY.md). You can verify you got the real Odysseus APK using the [SHA256 Signing Certificate](PRIVACY.md#verifying-a-release), and verify that its source code matches the released APK through [reproducible builds](PRIVACY.md#reproducible-builds).
 -   **Is Odysseus privacy respecting?** Yes. There's no telemetry, no permissions, and no network access.
 -   **What are the risks?** One risk with Odysseus, and device-owner apps in general, is the amount of trust you have to put in them. Device-owner apps are given a huge amount of permissions by Android. Odysseus uses only the few listed in [PRIVACY.md](PRIVACY.md), and they can be undone.
 -   **Will I always need ADB?** In the future, depending on GrapheneOS, Odysseus may be updated so you can install it and make it the device owner without ADB, through QR code provisioning during initial device setup ([issue](https://github.com/GrapheneOS/platform_packages_apps_SetupWizard2/issues/35) / [earlier attempt, closed](https://github.com/GrapheneOS/platform_packages_apps_SetupWizard2/pull/40)). You can add reactions to the issue to show support, but please only comment if you have something meaningful to add.
