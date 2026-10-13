@@ -10,7 +10,7 @@ Open an [issue](https://github.com/flourish-today/Odysseus/issues) with:
 -   Your phone model and GrapheneOS version
 -   What you did, what you expected, and what happened
 
-For security related issues, follow [SECURITY.md](SECURITY.md) instead of a public GitHub issue.
+For security-related issues, follow [SECURITY.md](SECURITY.md) instead of a public GitHub issue.
 
 ## Verifying a build
 
