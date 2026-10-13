@@ -41,8 +41,12 @@ Release signing certificate SHA-256: `febb57701990d136896aede8da8b3f9d62c13f0d20
 
 This confirms the released APK was built from the public source code. Your build will match the release in every file; only the signature differs. Being open source with reproducible builds doesn't mean a third party has checked that the code is safe or that the builds match.
 
-You need a computer with JDK 21, Gradle 9.5.1, and the Android SDK with platform 37.0 and build-tools 37.0.0, with `ANDROID_HOME` set. With Google's command-line tools, you can install the SDK parts with `sdkmanager "platforms;android-37.0" "build-tools;37.0.0"`. Check that `java -version` shows 21 before building.
+You need:
 
+-   JDK 21, for example [Temurin 21](https://adoptium.net/temurin/releases/?version=21). Check that `java -version` shows 21. On macOS, if you also have a newer Java, run `export JAVA_HOME="$(/usr/libexec/java_home -v 21)"` first.
+-   [Gradle 9.5.1](https://gradle.org/releases/), installed so the `gradle` command works. Package managers usually install a newer version, which won't match.
+-   The Android SDK with platform 37.0 and build-tools 37.0.0, from Android Studio or Google's [command-line tools](https://developer.android.com/studio#command-line-tools-only): `sdkmanager "platforms;android-37.0" "build-tools;37.0.0"`. Then set `ANDROID_HOME` to the SDK folder.
+  
 1. Get the source for the release and build it:
 
    ```
