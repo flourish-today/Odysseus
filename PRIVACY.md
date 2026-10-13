@@ -71,6 +71,8 @@ For a stricter check, compare the whole unsigned APK byte for byte with the "Uns
 sha256sum app/build/outputs/apk/release/app-release-unsigned.apk
 ```
 
+Please consider sharing the result in an issue no matter what result you got.
+
 ## Notes
 
 [1] Relevant GrapheneOS posts about apps like Odysseus
