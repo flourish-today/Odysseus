@@ -64,13 +64,13 @@ FE:BB:57:70:19:90:D1:36:89:6A:ED:E8:DA:8B:3F:9D:62:C1:3F:0D:20:D2:AD:3B:E7:77:68
 5.  On your computer, open a terminal (Command Prompt on Windows) and run the command Odysseus shows on its screen:
     `adb shell dpm set-device-owner org.getflourish.odysseus/.Receiver`
     Odysseus should now say "Device owner: active."
-6.  Turn off Developer options in Settings → System → Developer options (this will also turn off USB debugging.
+6.  Turn off Developer options in Settings → System → Developer options (this will also turn off USB debugging).
 7.  In Odysseus, under Create user, type a name like "user" and tap Create.
 8.  In Owner, go to Settings → System → Users → (the daily user) → Install available apps, and choose the apps you want. It's recommended to install all GrapheneOS default apps besides Vanadium to avoid breakage. Without Camera, for example, you can't take photos in Signal. App installs are already enabled for a new user, so you don't need to turn them on here. You can add more apps later (see [Adding apps](#adding-apps)).
 9.  Switch to the daily user (swipe down twice from the top of the screen and tap the user icon) and finish its setup. In its App Store, check that Vanadium Config and Vanadium System WebView are installed, and install them if not. Apps that use WebView need them (see [Usability limitations](#usability-limitations)).
 10. Go back to Owner, open Settings → System → Users → (the daily user), and set App installs and updates to Disabled.
-11. In the daily user, check that Odysseus's icon is gone from the home screen, that Odysseus can't be uninstalled in Settings → Apps, and that Private Space can't be set up.
-
+11. In the daily user, check that Odysseus's icon is gone from the home screen, that Odysseus can't be uninstalled in Settings → Apps, and that Private Space can't be set up. If any of these checks fails, go back to Owner, delete the daily user, and create it again.
+    
 ### Troubleshooting
 
 -   **The `set-device-owner` command fails with an error about accounts or users.** An account, another user, or Private Space still exists. Remove it and run the command again. A reliable way to set up Odysseus is after a factory reset.
