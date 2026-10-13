@@ -37,7 +37,6 @@ For AppVerifier:
 ```
 org.getflourish.odysseus
 FE:BB:57:70:19:90:D1:36:89:6A:ED:E8:DA:8B:3F:9D:62:C1:3F:0D:20:D2:AD:3B:E7:77:68:2A:B3:96:63:B0
-
 ```
 
 **Build it yourself.** You need JDK 21, Gradle 9.5.1, and the Android SDK with platform 37 and build-tools 37.0.0, with `ANDROID_HOME` set.
@@ -47,7 +46,6 @@ git clone https://github.com/flourish-today/odysseus.git
 cd odysseus
 git checkout v1.01
 gradle --no-daemon :app:assembleRelease -Pandroid.aapt2FromMavenOverride="$ANDROID_HOME/build-tools/37.0.0/aapt2"
-
 ```
 Download Odysseus-1.01.apk from the v1.01 GitHub release into the odysseus folder. To check it against the signed release, compare their contents:
 
@@ -56,7 +54,6 @@ mkdir rel mine
 unzip -q Odysseus-1.01.apk -d rel
 unzip -q app/build/outputs/apk/release/app-release-unsigned.apk -d mine
 diff -rq rel mine && echo MATCH
-
 ```
 
 If it prints `MATCH`, the release contains exactly what you built.
