@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in helping with Odysseus. It's meant to stay small, so the most useful contributions are issues.
+Thanks for your interest in helping with Odysseus ♡! It's meant to stay small, so the most useful contributions are issues.
 
 ## Reporting a bug
 
