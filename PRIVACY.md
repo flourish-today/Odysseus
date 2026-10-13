@@ -41,30 +41,35 @@ Release signing certificate SHA-256: `febb57701990d136896aede8da8b3f9d62c13f0d20
 
 This confirms the released APK was built from the public source code. Your build will match the release in every file; only the signature differs. Being open source with reproducible builds doesn't mean a third party has checked that the code is safe or that the builds match.
 
-You need a computer with JDK 21, Gradle 9.5.1, and the Android SDK with platform 37 and build-tools 37.0.0, with `ANDROID_HOME` set.
+You need a computer with JDK 21, Gradle 9.5.1, and the Android SDK with platform 37.0 and build-tools 37.0.0, with `ANDROID_HOME` set. With Google's command-line tools, you can install the SDK parts with `sdkmanager "platforms;android-37.0" "build-tools;37.0.0"`. Check that `java -version` shows 21 before building.
 
 1. Get the source for the release and build it:
 
-   ```
+```
    git clone https://github.com/flourish-today/odysseus.git
    cd odysseus
    git checkout v1.01
    gradle --no-daemon :app:assembleRelease -Pandroid.aapt2FromMavenOverride="$ANDROID_HOME/build-tools/37.0.0/aapt2"
-   ```
+```
 
 2. Download `Odysseus-1.01.apk` from the [v1.01 release](https://github.com/flourish-today/Odysseus/releases/tag/v1.01) into the `odysseus` folder.
 
 3. Unpack both APKs and compare them:
 
-   ```
+```
    mkdir rel mine
    unzip -q Odysseus-1.01.apk -d rel
    unzip -q app/build/outputs/apk/release/app-release-unsigned.apk -d mine
    diff -rq rel mine && echo MATCH
-   ```
+```
 
 If it prints `MATCH`, the release contains exactly what you built.
 
+For a stricter check, compare the whole unsigned APK byte for byte with the "Unsigned build SHA-256" in the release notes. On macOS, use `shasum -a 256` instead of `sha256sum`:
+
+```
+sha256sum app/build/outputs/apk/release/app-release-unsigned.apk
+```
 ## Notes
 
 [1] Relevant GrapheneOS posts about apps like Odysseus
