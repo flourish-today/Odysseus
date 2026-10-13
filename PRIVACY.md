@@ -45,23 +45,23 @@ You need a computer with JDK 21, Gradle 9.5.1, and the Android SDK with platform
 
 1. Get the source for the release and build it:
 
-```
+   ```
    git clone https://github.com/flourish-today/odysseus.git
    cd odysseus
    git checkout v1.01
    gradle --no-daemon :app:assembleRelease -Pandroid.aapt2FromMavenOverride="$ANDROID_HOME/build-tools/37.0.0/aapt2"
-```
+   ```
 
 2. Download `Odysseus-1.01.apk` from the [v1.01 release](https://github.com/flourish-today/Odysseus/releases/tag/v1.01) into the `odysseus` folder.
 
 3. Unpack both APKs and compare them:
 
-```
+   ```
    mkdir rel mine
    unzip -q Odysseus-1.01.apk -d rel
    unzip -q app/build/outputs/apk/release/app-release-unsigned.apk -d mine
    diff -rq rel mine && echo MATCH
-```
+   ```
 
 If it prints `MATCH`, the release contains exactly what you built.
 
@@ -70,6 +70,7 @@ For a stricter check, compare the whole unsigned APK byte for byte with the "Uns
 ```
 sha256sum app/build/outputs/apk/release/app-release-unsigned.apk
 ```
+
 ## Notes
 
 [1] Relevant GrapheneOS posts about apps like Odysseus
