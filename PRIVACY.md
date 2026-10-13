@@ -44,9 +44,9 @@ This confirms the released APK was built from the public source code. Your build
 You need:
 
 -   JDK 21, for example [Temurin 21](https://adoptium.net/temurin/releases/?version=21). If you have more than one Java installed, set `JAVA_HOME` to the Java 21 folder. Check that `java -version` shows 21.
--   [Gradle 9.5.1](https://gradle.org/releases/), installed so the `gradle` command works. Package managers usually install a newer version, which won't match.
--   The Android SDK with platform 37.0 and build-tools 37.0.0, from Android Studio or Google's [command-line tools](https://developer.android.com/studio#command-line-tools-only): `sdkmanager "platforms;android-37.0" "build-tools;37.0.0"`. Then set `ANDROID_HOME` to the SDK folder.
-  
+-   [Gradle 9.5.1](https://services.gradle.org/distributions/gradle-9.5.1-bin.zip), unzipped, with its `bin` folder on your `PATH` so the `gradle` command works. Package managers usually install a newer version, which won't match.
+-   The Android SDK with platform 37.0 and build-tools 37.0.0, from Android Studio or Google's [command-line tools](https://developer.android.com/studio#command-line-tools-only). Set `ANDROID_HOME` to the SDK folder. With the command-line tools, install the parts with `sdkmanager --sdk_root="$ANDROID_HOME" "platforms;android-37.0" "build-tools;37.0.0"`.
+    
 1. Get the source for the release and build it:
 
    ```
