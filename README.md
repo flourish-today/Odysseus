@@ -105,7 +105,7 @@ If you tap Deactivate without deleting the daily user, the daily user stays rest
 
 ## FAQ
 
--   **Does Odysseus use AI?** Yes. This app was developed with Claude Opus 5.5. Its code was reviewed by GPT-6 Astra and multiple other times with Opus 5.5. AI security reviews of Odysseus found no way for other apps to use its device-owner powers and no network access. They found minor reliability issues, most of which have been fixed or found inconsequential. More reviews are welcome.
+-   **Does Odysseus use AI?** Yes. This app was developed with Claude Opus 5.5. Its code was reviewed by GPT-6 Astra and Opus 5.5. AI security reviews of Odysseus found no way for other apps to use its device-owner powers and no network access. They found minor reliability issues, most of which have been fixed or found inconsequential. More reviews are welcome.
 -   **Is Odysseus secure?** Odysseus uses the intended way to restrict devices on Android. It's tiny, requests no permissions, and only does what it says. See more info in [PRIVACY.md](PRIVACY.md). You can verify you got the real Odysseus APK using the [SHA256 Signing Certificate](PRIVACY.md#verifying-a-release), and verify that its source code matches the released APK through [reproducible builds](PRIVACY.md#reproducible-builds).
 -   **Is Odysseus privacy respecting?** Yes. There's no telemetry, no permissions, and no network access.
 -   **What are the risks?** One risk with Odysseus, and device-owner apps in general, is the amount of trust you have to put in them. Device-owner apps are given a huge amount of permissions by Android. Odysseus uses only the few listed in [PRIVACY.md](PRIVACY.md), and they can be undone.
