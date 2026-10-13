@@ -52,6 +52,7 @@ FE:BB:57:70:19:90:D1:36:89:6A:ED:E8:DA:8B:3F:9D:62:C1:3F:0D:20:D2:AD:3B:E7:77:68
 -   **Back up all important data off your device.** You should do this even if you weren't using Odysseus, in case your phone gets lost or breaks.
 -   Android only allows a device owner on a phone with no accounts, no other users, and no Private Space. The most reliable way is a factory reset. Otherwise, remove every account, every other user, and Owner's Private Space. If you only use Owner, removing all accounts in Settings and your Private Space is enough.
 -   Owner's password is what keeps the daily user restricted. Pick one you can't easily get to yourself. For example, have someone you trust set it, or split it so you each know only half. You can also use a long password stored somewhere inconvenient or a long password you have memorized. Whatever method you pick, consider memorizing part of it and not sharing that part, so only you can get into the phone. If the password is lost, the only way back is a factory reset.
+-   You may want to keep the owner password simple until setup is finished.
 -   Consider setting the auto reboot timer longer than you usually go without using your phone. After each automatic restart, you have to unlock Owner before you can switch to the daily user.
 
 ### Instructions
