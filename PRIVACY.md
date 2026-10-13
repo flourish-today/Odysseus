@@ -39,7 +39,7 @@ Release signing certificate SHA-256: `febb57701990d136896aede8da8b3f9d62c13f0d20
 
 ## Reproducible builds
 
-This confirms the released APK was built from the public source code. Just because Odysseus supports reproducible builds and is open source doesn't mean a third party has verified the code is safe and the builds are reproducible.
+This confirms the released APK was built from the public source code. Your build will match the release in every file; only the signature differs. Being open source with reproducible builds doesn't mean a third party has checked that the code is safe or that the builds match.
 
 You need a computer with JDK 21, Gradle 9.5.1, and the Android SDK with platform 37 and build-tools 37.0.0, with `ANDROID_HOME` set.
 
