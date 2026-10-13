@@ -1,6 +1,6 @@
 # Security Policy
 
-Odysseus aims to be a secure app that people can rely on to improve their well being, therefore security is prioritized and issues will be addressed.
+Odysseus aims to be a secure app that people can rely on to improve their well-being, so is a priority and issues will be addressed.
 
 ## Reporting a vulnerability
 
