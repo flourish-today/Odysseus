@@ -18,7 +18,9 @@
   <a href="https://github.com/flourish-today/odysseus/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/flourish-today/odysseus?style=for-the-badge&color=FF5252&labelColor=8F1D21&logo=github" /></a>
 </p>
 
-<p align="center"><b>Create a dumbphone on GrapheneOS</b></p>
+<h3 align="center">Create a dumbphone on GrapheneOS</h3>
+
+<p align="center">Odysseus sets up a secondary user on your phone with no browser and only the apps you choose.<br />Nothing new can be installed in it without Owner's password.</p>
 
 <div align="center">
 <table>
