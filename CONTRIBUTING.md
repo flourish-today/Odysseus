@@ -3,6 +3,7 @@
 Thanks for your interest in contributing to Odysseus! ♡
 
 It's meant to stay small, so contributions are made through issues. Pull requests are off.
+
 ## Reporting a bug
 
 Open an [issue](https://github.com/flourish-today/Odysseus/issues) with:
@@ -20,4 +21,5 @@ If you build a release yourself by following [Reproducible builds](PRIVACY.md#re
 
 -   Odysseus won't add permissions, network access, or libraries.
 -   New features are unlikely to be accepted unless they fit what Odysseus already does.
--   Restricting Owner directly, so Odysseus can be used without a separate daily user, is open for discussion, though it may be better suited to a fork.
+-   Restricting Owner directly, so Odysseus can be used without a separate secondary user, is open for discussion, though it may be better suited to a fork.
+-   These are just guidelines don't worry about it just reach out.
