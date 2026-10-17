@@ -8,24 +8,24 @@ Odysseus uses its Device Owner capability responsibly by only using these few De
 
 | What it does | Android API | When |
 |---|---|---|
-| Creates the secondary user without the optional system apps, and becomes its profile owner | `DevicePolicyManager.createAndManageUser` | In Owner, when you tap Create |
-| Blocks Private Space | `DevicePolicyManager.addUserRestriction` with `DISALLOW_ADD_PRIVATE_PROFILE` | In the secondary user, when it first starts |
-| Blocks debugging features | `DevicePolicyManager.addUserRestriction` with `DISALLOW_DEBUGGING_FEATURES` | In the secondary user, when it first starts |
-| Turns the backup service on, which Android turns off when a device owner is set | `DevicePolicyManager.setBackupServiceEnabled` | In the secondary user when it first starts, and in Owner whenever you open Odysseus |
+| Creates the secondary user without the optional system apps, and becomes its profile owner | `DevicePolicyManager.createAndManageUser` | In the owner profile, when you tap Create |
+| Blocks Private Space | `DevicePolicyManager.addUserRestriction` with `DISALLOW_ADD_PRIVATE_PROFILE` | In the secondary user profile, when it first starts |
+| Blocks debugging features | `DevicePolicyManager.addUserRestriction` with `DISALLOW_DEBUGGING_FEATURES` | In the secondary user profile, when it first starts |
+| Turns the backup service on, which Android turns off when a device owner is set | `DevicePolicyManager.setBackupServiceEnabled` | In the secondary user profile when it first starts, and in the owner profile whenever you open Odysseus |
 | Hides its own screen | `PackageManager.setComponentEnabledSetting` (its own screen only) | In the secondary user, when it first starts |
-| Removes itself as device owner | `DevicePolicyManager.clearDeviceOwnerApp` | In Owner, when you tap Deactivate |
+| Removes itself as device owner | `DevicePolicyManager.clearDeviceOwnerApp` | In the owner profile, when you tap Deactivate |
 
 ## Risks to using Odysseus
 
 -   Odysseus is a device-owner app, which gives it powers far beyond a normal app. Odysseus uses only the few listed above, but a future update signed with the same key could, for example, give Odysseus the ability to wipe your device.
--   By using Odysseus, you're using GrapheneOS in a non-standard way. GrapheneOS does not recommend changing the default installed apps, and Odysseus does not install Vanadium into the secondary user. GrapheneOS recognizes device owners as the standard way to manage devices, and ADB is currently the only way to set one up. However, GrapheneOS advises against apps that use these APIs to "disallow a bunch of functionality." [1]
+-   By using Odysseus, you're using GrapheneOS in a non-standard way. GrapheneOS does not recommend changing the default installed apps, and Odysseus does not install Vanadium into the secondary user profile. GrapheneOS recognizes device owners as the standard way to manage devices, and ADB is currently the only way to set one up. However, GrapheneOS advises against apps that use these APIs to "disallow a bunch of functionality." [1]
 
 ## Features
 
 -   Odysseus has no network access and no permissions, and other apps can't use its powers.
 -   Its only exported component is its launcher screen, its only library is the Kotlin standard library, and it's under 200 lines of Kotlin. You can check the component and permissions in `app/src/main/AndroidManifest.xml`.
 -   Odysseus has reproducible builds. See [Reproducible builds](#reproducible-builds).
--   Odysseus has a simple design with a single screen. You'll mainly only see it in the Owner during setup.
+-   Odysseus has a simple design with a single screen. You'll mainly only see it in the owner profile during setup.
 -   Odysseus is tiny; it's about 90 kB installed.
 
 ## Verifying a release
