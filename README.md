@@ -4,13 +4,13 @@
 
 <h3 align="center">Create a dumbphone on GrapheneOS</h3>
 
-<p align="center">Odysseus sets up a secondary user on your phone with no browser and only the apps you choose.<br />Nothing new can be installed in it without Owner's password.</p>
-
 <p align="center">
   <a href="PRIVACY.md#features"><img alt="No network access" src="https://img.shields.io/badge/network-none-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
   <a href="app/src/main/AndroidManifest.xml"><img alt="0 permissions" src="https://img.shields.io/badge/permissions-0-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
   <a href="PRIVACY.md#reproducible-builds"><img alt="Reproducible builds" src="https://img.shields.io/badge/builds-reproducible-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
 </p>
+
+<p align="center">Odysseus sets up a secondary user on your phone with no browser and only the apps you choose.<br />Nothing new can be installed in it without Owner's password.</p>
 
 <div align="center">
 <table>
