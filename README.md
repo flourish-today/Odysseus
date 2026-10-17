@@ -32,7 +32,7 @@
 
 ## What you need
 
-Android only allows a device owner on a phone with no accounts, no other users, and no Private Space, so you’ll likely need to remove these first. **Back up all important data off your device before you start**, since any app that changes system settings carries some risk. Alternatively you can factory reset your device which will ensure 
+Android only allows a device owner on a phone with no accounts, no other users, and no Private Space, so you’ll likely need to remove these first. **Back up all important data off your device before you start**, since any app that changes system settings carries some risk.
 
 <h2 align="center">Download</h2>
 
