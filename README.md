@@ -1,9 +1,7 @@
 <div align="center"><img src="downloads-images/icon.svg" alt="Odysseus icon" width="128" /></div>
 
 <h1 align="center">Odysseus</h1>
-
 <br />
-
 <p align="center">
   <a href="PRIVACY.md#features"><img alt="No network access" src="https://img.shields.io/badge/network-none-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
   <a href="app/src/main/AndroidManifest.xml"><img alt="0 permissions" src="https://img.shields.io/badge/permissions-0-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
