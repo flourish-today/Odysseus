@@ -74,8 +74,7 @@ See the [setup guide](SETUP.md) for the full steps.
 ## Contact
 
 -   Email: flourish.today@protonmail.com
--   SimpleX: [chat link](https://smp17.simplex.im/a#OYNzLgLMY-vsrI69LroxLrhc4xkyLGpT2Q5ygNvoaAc)
--   GitHub: [@flourish-today](https://github.com/flourish-today)
+-   SimpleX: https://smp17.simplex.im/a#OYNzLgLMY-vsrI69LroxLrhc4xkyLGpT2Q5ygNvoaAc
 
 ## Public domain
 
