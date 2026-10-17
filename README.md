@@ -33,7 +33,7 @@
 
 ## Why Odysseus?
 
--   **No Vanadium.** GrapheneOS can't otherwise create a user without Vanadium. Odysseus creates the secondary user without it.
+-   **No Vanadium.** GrapheneOS can't otherwise create a user without a web browser. Odysseus creates the secondary user without it.
 -   **The apps you choose, none that you don't.** Once app installs are turned off from Owner, the secondary user can't add apps.
 -   **Hard to bypass.** The restrictions are enforced by Android and GrapheneOS's improved user profiles, and there is no Odysseus screen in the secondary user to turn them off. Only Owner can change them, so Owner's password is what keeps them in place.
 -   **Tiny and private.** Under 200 lines of Kotlin, no permissions, no network access, and no telemetry, with reproducible builds.
