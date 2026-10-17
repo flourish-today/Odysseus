@@ -22,7 +22,6 @@
 </table>
 </div>
 
-
 ## Why Odysseus?
 
 -   **No browser.** GrapheneOS can't otherwise create a user without Vanadium. Odysseus creates the secondary user without it.
@@ -68,9 +67,11 @@ See the [setup guide](SETUP.md) for the full steps.
 ```
 82omZG3aUU7gqJhR6dZGSReYvKD7kHFuxj5MGKMAGiJdcSYLnMb9Nky9UBxeuadSSzCNYpwfUueQBdQPEaTXmLH4Tkmbv39
 ```
+## Contact
 
-flourish.today@protonmail.com  
-https://smp17.simplex.im/a#OYNzLgLMY-vsrI69LroxLrhc4xkyLGpT2Q5ygNvoaAc
+-   Email: flourish.today@protonmail.com
+-   SimpleX: [chat link](https://smp17.simplex.im/a#OYNzLgLMY-vsrI69LroxLrhc4xkyLGpT2Q5ygNvoaAc)
+-   GitHub: [@flourish-today](https://github.com/flourish-today)
 
 ## Public domain
 
