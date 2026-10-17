@@ -14,7 +14,7 @@
   <a href="PRIVACY.md#reproducible-builds"><img alt="Reproducible builds" src="https://img.shields.io/badge/builds-reproducible-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
   <br />
   <a href="LICENSE"><img alt="License: CC0 1.0" src="https://img.shields.io/badge/license-CC0_1.0-FF9100?style=for-the-badge&labelColor=BF360C" /></a>
-  <img alt="Code size" src="https://img.shields.io/github/languages/code-size/flourish-today/odysseus?style=for-the-badge&color=40C4FF&labelColor=0D47A1" />
+  <img alt="Code size" src="https://img.shields.io/badge/code%20size-5.9%20KiB-40C4FF?style=for-the-badge&labelColor=0D47A1" />
   <a href="https://github.com/flourish-today/odysseus/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/flourish-today/odysseus?style=for-the-badge&color=FF5252&labelColor=8F1D21&logo=github" /></a>
 </p>
 
@@ -41,7 +41,7 @@
 
 ## What you need
 
-You need a GrapheneOS phone, a USB-C cable, and a computer with [ADB installed](https://developer.android.com/tools/adb). Android only allows a device owner on a phone with no accounts, no other users, and no Private Space. **Back up all important data off your device** first, just as you should do in normal operations as your phone could randomly fail at any time.
+You need a GrapheneOS phone, a USB-C cable, and a computer with [ADB installed](https://developer.android.com/tools/adb). Android only allows a device owner on a phone with no accounts, no other users, and no Private Space. **Back up all important data off your device**—if you have profiles you must remove them so you need that data and there's always a risk when using an app that changes your system. 
 
 <h2 align="center">Download</h2>
 
