@@ -5,18 +5,9 @@
 <br />
 
 <p align="center">
-  <a href="app/build.gradle.kts"><img alt="API 35+" src="https://img.shields.io/badge/API_35%2B-3DDC84?style=for-the-badge&logo=android&logoColor=black" /></a>
-  <a href="app/src/main/java/org/getflourish/odysseus"><img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" /></a>
-  <img alt="Built For GrapheneOS" src="https://img.shields.io/badge/Built_For_GrapheneOS-1E88E5?style=for-the-badge" />
-  <br />
   <a href="PRIVACY.md#features"><img alt="No network access" src="https://img.shields.io/badge/network-none-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
   <a href="app/src/main/AndroidManifest.xml"><img alt="0 permissions" src="https://img.shields.io/badge/permissions-0-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
   <a href="PRIVACY.md#reproducible-builds"><img alt="Reproducible builds" src="https://img.shields.io/badge/builds-reproducible-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
-  <br />
-  <a href="LICENSE"><img alt="License: CC0 1.0" src="https://img.shields.io/badge/license-CC0_1.0-FF9100?style=for-the-badge&labelColor=BF360C" /></a>
-  <img alt="Code size" src="https://img.shields.io/badge/code%20size-5.9%20KiB-40C4FF?style=for-the-badge&labelColor=0D47A1" />
-  <a href="https://github.com/flourish-today/odysseus/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/flourish-today/odysseus?style=for-the-badge&color=FF5252&labelColor=8F1D21&logo=github" /></a>
-</p>
 
 <h3 align="center">Create a dumbphone on GrapheneOS</h3>
 
