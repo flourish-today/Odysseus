@@ -1,41 +1,41 @@
 # Privacy and security
 
+Odysseus collects and shares no personal data. It has no telemetry, no permissions, and no network access. It has reproducible builds so you can verify the source code is what runs on your device.
+
+Odysseus uses its Device Owner capability responsibly by only using these few Device Management APIs:
+
 ## Device management APIs used
 
 | What it does | Android API | When |
 |---|---|---|
-| Creates the daily user without the optional system apps, and becomes its profile owner | `DevicePolicyManager.createAndManageUser` | In Owner, when you tap Create |
-| Blocks Private Space | `DevicePolicyManager.addUserRestriction` with `DISALLOW_ADD_PRIVATE_PROFILE` | In the daily user, when it first starts |
-| Blocks debugging features | `DevicePolicyManager.addUserRestriction` with `DISALLOW_DEBUGGING_FEATURES` | In the daily user, when it first starts |
-| Turns the backup service on, which Android turns off when a device owner is set | `DevicePolicyManager.setBackupServiceEnabled` | In the daily user when it first starts, and in Owner whenever you open Odysseus |
-| Hides its own screen | `PackageManager.setComponentEnabledSetting` (its own screen only) | In the daily user, when it first starts |
+| Creates the secondary user without the optional system apps, and becomes its profile owner | `DevicePolicyManager.createAndManageUser` | In Owner, when you tap Create |
+| Blocks Private Space | `DevicePolicyManager.addUserRestriction` with `DISALLOW_ADD_PRIVATE_PROFILE` | In the secondary user, when it first starts |
+| Blocks debugging features | `DevicePolicyManager.addUserRestriction` with `DISALLOW_DEBUGGING_FEATURES` | In the secondary user, when it first starts |
+| Turns the backup service on, which Android turns off when a device owner is set | `DevicePolicyManager.setBackupServiceEnabled` | In the secondary user when it first starts, and in Owner whenever you open Odysseus |
+| Hides its own screen | `PackageManager.setComponentEnabledSetting` (its own screen only) | In the secondary user, when it first starts |
 | Removes itself as device owner | `DevicePolicyManager.clearDeviceOwnerApp` | In Owner, when you tap Deactivate |
 
 ## Risks to using Odysseus
 
 -   Odysseus is a device-owner app, which gives it powers far beyond a normal app. Odysseus uses only the few listed above, but a future update signed with the same key could, for example, give Odysseus the ability to wipe your device.
--   By using Odysseus, you're using GrapheneOS in a non-standard way. GrapheneOS does not recommend changing the default installed apps, and Odysseus does not install Vanadium into the daily user. GrapheneOS recognizes device owners as the standard way to manage devices, and ADB is currently the only way to set one up. However, GrapheneOS advises against apps that use these APIs to "disallow a bunch of functionality." [1]
+-   By using Odysseus, you're using GrapheneOS in a non-standard way. GrapheneOS does not recommend changing the default installed apps, and Odysseus does not install Vanadium into the secondary user. GrapheneOS recognizes device owners as the standard way to manage devices, and ADB is currently the only way to set one up. However, GrapheneOS advises against apps that use these APIs to "disallow a bunch of functionality." [1]
 
 ## Features
 
 -   Odysseus has no network access and no permissions, and other apps can't use its powers.
 -   Its only exported component is its launcher screen, its only library is the Kotlin standard library, and it's under 200 lines of Kotlin. You can check the component and permissions in `app/src/main/AndroidManifest.xml`.
 -   Odysseus has reproducible builds. See [Reproducible builds](#reproducible-builds).
--   Odysseus has a simple design with a single screen.
--   Odysseus is tiny: under 100 kB installed.
+-   Odysseus has a simple design with a single screen. You'll mainly only see it in the Owner during setup.
+-   Odysseus is tiny; it's about 90 kB installed.
 
 ## Verifying a release
 
-This confirms the Odysseus you installed was signed by its developer.
-
-Use [AppVerifier](https://github.com/soupslurpr/AppVerifier) with the package name and hash below. Odysseus has also been [domain verified](https://github.com/privacyguides/verified-apps/issues/6777) and [submitted](https://github.com/privacyguides/verified-apps/issues/6778) to Privacy Guides' [verified-apps-android](https://github.com/privacyguides/verified-apps-android) database. Once it's added, that app can verify Odysseus too.
+Use [AppVerifier](https://github.com/soupslurpr/AppVerifier) with the package name and hash below. Odysseus has also been [domain verified](https://github.com/privacyguides/verified-apps/issues/6777) and [submitted](https://github.com/privacyguides/verified-apps/issues/6778) to Privacy Guides' [verified-apps-android](https://github.com/privacyguides/verified-apps-android) database. 
 
 ```
 org.getflourish.odysseus
 FE:BB:57:70:19:90:D1:36:89:6A:ED:E8:DA:8B:3F:9D:62:C1:3F:0D:20:D2:AD:3B:E7:77:68:2A:B3:96:63:B0
 ```
-
-Release signing certificate SHA-256: `febb57701990d136896aede8da8b3f9d62c13f0d20d2ad3be777682ab39663b0`
 
 ## Reproducible builds
 
@@ -69,8 +69,6 @@ You need:
 
 If it prints `MATCH`, the release contains exactly what you built.
 
-For a stricter check, compare the whole unsigned APK byte for byte with the "Unsigned build SHA-256" in the release notes. On macOS, use `shasum -a 256` instead of `sha256sum`:
-
 ```
 sha256sum app/build/outputs/apk/release/app-release-unsigned.apk
 ```
@@ -79,7 +77,7 @@ Please consider sharing the result in an issue no matter what result you got.
 
 ## Notes
 
-[1] Relevant GrapheneOS posts about apps like Odysseus
+[1] Relevant GrapheneOS posts about apps like Odysseus. They are not specific to Odysseus but device management apps in general.
 
 [Tweet 1 (August 2021)](https://xxcancel.com/GrapheneOS/status/1422158415728627715)
 
