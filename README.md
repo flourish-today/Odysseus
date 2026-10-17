@@ -17,7 +17,7 @@
   <tr>
     <td align="center"><img src="downloads-images/user1.png" alt="The secondary user's App Store failing an install because the policy on this device prevents app installation" width="220" /><br /><sub>App installs blocked</sub></td>
     <td align="center"><img src="downloads-images/user2.png" alt="The secondary user's app list: searching for Vanadium finds only Vanadium Config and Vanadium System WebView, no browser" width="220" /><br /><sub>No browser</sub></td>
-    <td align="center"><img src="downloads-images/user4.png" alt="Odysseus's app info in the secondary user: That can't be uninstalled as all the management buttons are grayed out for the user. " width="220" /><br /><sub>No uninstalling</sub></td>
+    <td align="center"><img src="downloads-images/user4.png" alt="Odysseus's app info in the secondary user: all the options, archive, disable, uninstall, and force stop are grayed out which shows the secondary user cannot uninstall Odysseus." width="220" /><br /><sub>No uninstalling</sub></td>
   </tr>
 </table>
 </div>
@@ -29,9 +29,10 @@
 -   **Hard to bypass.** The restrictions are enforced by Android and GrapheneOS's improved user profiles, and there is no Odysseus screen in the secondary user to turn them off. Only the Owner profile can change them, so the Owner profile's password is what keeps them in place.
 -   **Tiny and private.** Under 200 lines of Kotlin, no permissions, no network access, and no telemetry, with reproducible builds.
 
-## What you need
+   ## What you need
 
-Android only allows a device owner on a phone with no accounts, no other users, and no Private Space, so you’ll likely need to remove these first. **Back up all important data off your device before you start**, since any app that changes system settings carries some risk.
+You need a GrapheneOS phone, a USB-C cable, and a computer with [ADB installed](https://developer.android.com/tools/adb). Android only allows a device owner on a phone with no accounts, no other users, and no Private Space, so you'll need to remove these if you have any of them. Alternatively a factory reset will always work but you lose all data in your owner profile compared to simply removing the accounts. **Back up all important data off your device before you start.**
+
 
 <h2 align="center">Download</h2>
 
@@ -39,6 +40,8 @@ Android only allows a device owner on a phone with no accounts, no other users, 
   <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/flourish-today/Odysseus/releases"><img src="/downloads-images/badge_obtainium.png" alt="Get it on Obtainium" height="80" /></a>
   <a href="https://github.com/flourish-today/Odysseus/releases"><img src="/downloads-images/badge_github.png" alt="Get it on GitHub" height="80" /></a>
 </div>
+
+<p align="center">Verify your download with <a href="https://github.com/soupslurpr/AppVerifier">AppVerifier</a>:</p>
 
 ```
 org.getflourish.odysseus
@@ -58,7 +61,8 @@ See the [setup guide](SETUP.md) for the full steps.
 -   [How it works](SETUP.md#how-it-works)
 -   [FAQ](FAQ.md)
 -   [Privacy and security](PRIVACY.md)
--   [GrapheneOS forum thread](https://discuss.grapheneos.org/d/42598-odysseus-make-your-grapheneos-a-dumbphone) / [Issues](https://github.com/flourish-today/Odysseus/issues) / [Contact me](https://github.com/flourish-today)
+-   [GrapheneOS forum thread](https://discuss.grapheneos.org/d/42598-odysseus-make-your-grapheneos-a-dumbphone)
+-   [Issues](https://github.com/flourish-today/Odysseus/issues)
 
 ## Support
 
