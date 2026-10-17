@@ -69,10 +69,6 @@ See the [setup guide](SETUP.md) for the full steps.
 82omZG3aUU7gqJhR6dZGSReYvKD7kHFuxj5MGKMAGiJdcSYLnMb9Nky9UBxeuadSSzCNYpwfUueQBdQPEaTXmLH4Tkmbv39
 ```
 
-**Nice message**
-
-![Nice messages received](https://img.shields.io/badge/nice_messages_received-0-red)
-
 flourish.today@protonmail.com  
 https://smp17.simplex.im/a#OYNzLgLMY-vsrI69LroxLrhc4xkyLGpT2Q5ygNvoaAc
 
