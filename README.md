@@ -50,7 +50,11 @@ FE:BB:57:70:19:90:D1:36:89:6A:ED:E8:DA:8B:3F:9D:62:C1:3F:0D:20:D2:AD:3B:E7:77:68
 
 ## Setup
 
-Follow the [setup guide](SETUP.md). It also includes [adding apps](SETUP.md#adding-apps), [how to undo it](SETUP.md#to-undo-it), and [limitations](SETUP.md#usability-limitations).
+1. Install Odysseus and make it device owner with a signle ADB command.
+2. Create the restricted user and add your apps.
+3. Turn off app installs from Owner and switch over.
+
+See the [setup guide](SETUP.md) for the full steps.
 
 ## Learn more
 
@@ -58,9 +62,9 @@ Follow the [setup guide](SETUP.md). It also includes [adding apps](SETUP.md#addi
 -   [FAQ](FAQ.md)
 -   [Privacy and security](PRIVACY.md)
 
-## Disclaimer
+## Discuss
 
-Use at your own risk. Support will be provided on a best-effort basis. Feel free to open an [issue](https://github.com/flourish-today/Odysseus/issues), discuss on the [GrapheneOS forum](https://discuss.grapheneos.org/d/42598-odysseus-make-your-grapheneos-a-dumbphone) thread, or [contact me](https://github.com/flourish-today).
+Support will be provided on a best-effort basis. Feel free to open an [issue](https://github.com/flourish-today/Odysseus/issues), discuss on the [GrapheneOS forum](https://discuss.grapheneos.org/d/42598-odysseus-make-your-grapheneos-a-dumbphone) thread, or [contact me](https://github.com/flourish-today).
 
 ## Support
 
