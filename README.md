@@ -17,7 +17,7 @@
   <tr>
     <td align="center"><img src="downloads-images/user1.png" alt="The secondary user's App Store failing an install because the policy on this device prevents app installation" width="220" /><br /><sub>App installs blocked</sub></td>
     <td align="center"><img src="downloads-images/user2.png" alt="The secondary user's app list: searching for Vanadium finds only Vanadium Config and Vanadium System WebView, no browser" width="220" /><br /><sub>No browser</sub></td>
-    <td align="center"><img src="downloads-images/user4.png" alt="Odysseus's app info in the secondary user: no permissions granted and no data used" width="220" /><br /><sub>No uninstalling</sub></td>
+    <td align="center"><img src="downloads-images/user4.png" alt="Odysseus's app info in the secondary user: That can't be uninstalled as all the management buttons are grayed out for the user. " width="220" /><br /><sub>No uninstalling</sub></td>
   </tr>
 </table>
 </div>
