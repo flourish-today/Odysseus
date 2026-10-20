@@ -12,6 +12,14 @@
   <a href="PRIVACY.md#reproducible-builds"><img alt="Reproducible builds" src="https://img.shields.io/badge/builds-reproducible-2EA043?style=for-the-badge&labelColor=1F4D2B" /></a>
 </p>
 
+> [!NOTE]
+> Odysseus is in maintenance mode. It will likely only get fixes if a GrapheneOS update breaks it or there's a security issue. [Beeswax](https://github.com/flourish-today/beeswax) is an Owner-based setup which is a lot more convenient. Beeswax has more code and permissions and will get features like managed user profile support.
+>
+> With Odysseus, you have to enter the Owner password, which protects the browser and app installs for reasons other than enabling app installs and browsing. With Beeswax, it has its own locking code which is solely for preventing blocking app access and browsers.
+>
+> Odysseus is minimal and doesn't need more features. Odysseus is a totally valid option if its experience appeals to you more.
+
+
 <div align="center">
 <table>
   <tr>
