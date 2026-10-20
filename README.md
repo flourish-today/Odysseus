@@ -22,7 +22,7 @@
 </table>
 </div>
 
-## Why
+## Why?
 
 -   **No browser.** GrapheneOS can't otherwise create a user without Vanadium. Odysseus creates the secondary user without it.
 -   **The apps you choose, none that you don't.** Once app installs are turned off from the Owner profile, the secondary user can't add apps.
