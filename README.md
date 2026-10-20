@@ -17,7 +17,7 @@
 >
 > With Odysseus, you have to enter the Owner password, which protects the browser and app installs for reasons other than enabling app installs and browsing. With Beeswax, it has its own locking code which is solely for preventing blocking app access and browsers.
 >
-> Odysseus is minimal and doesn't need more features. Odysseus is a totally valid option if its experience appeals to you more.
+> Odysseus is minimal and doesn't need more features. Its user profile cannot manage its own updates or install apps, while Beeswax doesn't allow user profiles yet and allows the user to install apps but not access them without the code.. Odysseus is a valid option if its experience appeals to you more.
 
 
 <div align="center">
