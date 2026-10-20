@@ -16,8 +16,8 @@ android {
         applicationId = "org.getflourish.odysseus"
         minSdk = 35
         targetSdk = 37
-        versionCode = 10
-        versionName = "1.01"
+        versionCode = 11
+        versionName = "1.02"
         manifestPlaceholders["appName"] = if (testBuild) "Odysseus Test" else "Odysseus"
     }
 

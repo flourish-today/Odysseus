@@ -52,17 +52,17 @@ You need:
    ```
    git clone https://github.com/flourish-today/odysseus.git
    cd odysseus
-   git checkout v1.01
+   git checkout v1.02
    gradle --no-daemon :app:assembleRelease -Pandroid.aapt2FromMavenOverride="$ANDROID_HOME/build-tools/37.0.0/aapt2"
    ```
 
-2. Download `Odysseus-1.01.apk` from the [v1.01 release](https://github.com/flourish-today/Odysseus/releases/tag/v1.01) into the `odysseus` folder.
+2. Download `Odysseus-1.02.apk` from the [v1.02 release](https://github.com/flourish-today/Odysseus/releases/tag/v1.02) into the `odysseus` folder.
 
 3. Unpack both APKs and compare them:
 
    ```
    mkdir rel mine
-   unzip -q Odysseus-1.01.apk -d rel
+   unzip -q Odysseus-1.02.apk -d rel
    unzip -q app/build/outputs/apk/release/app-release-unsigned.apk -d mine
    diff -rq rel mine && echo MATCH
    ```

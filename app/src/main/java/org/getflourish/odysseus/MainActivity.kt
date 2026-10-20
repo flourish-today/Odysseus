@@ -4,7 +4,11 @@ package org.getflourish.odysseus
 import android.app.Activity
 import android.app.AlertDialog
 import android.app.admin.DevicePolicyManager
+import android.content.BroadcastReceiver
 import android.content.ComponentName
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
 import android.view.View
 import android.view.Window
@@ -17,6 +21,11 @@ import android.widget.Toast
 class MainActivity : Activity() {
     private lateinit var dpm: DevicePolicyManager
     private lateinit var admin: ComponentName
+
+    // Refresh as soon as Odysseus becomes device owner (the ADB command), not only on reopening.
+    private val ownerReceiver = object : BroadcastReceiver() {
+        override fun onReceive(context: Context, intent: Intent) = refresh()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,7 +48,13 @@ class MainActivity : Activity() {
 
     override fun onResume() {
         super.onResume()
+        registerReceiver(ownerReceiver, IntentFilter(DevicePolicyManager.ACTION_DEVICE_OWNER_CHANGED), Context.RECEIVER_NOT_EXPORTED)
         refresh()
+    }
+
+    override fun onPause() {
+        unregisterReceiver(ownerReceiver)
+        super.onPause()
     }
 
     private fun refresh() {
